@@ -147,6 +147,7 @@ HEADER STYLES
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 100;
 }
 
 	#logo img {
@@ -237,6 +238,15 @@ and more scalable.
 
 } /* end .nav */
 
+
+/*********************
+PANEL STYLES
+*********************/
+
+#home {
+	background: url('../images/snow.jpg') top center;
+	background-size: cover;
+}
 
 /*********************
 POSTS & CONTENT STYLES
