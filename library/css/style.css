@@ -1585,16 +1585,16 @@ HEADER STYLES
 *********************/
 /* line 146, ../scss/breakpoints/_base.scss */
 .header {
-  background-color: #323944;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-/* line 150, ../scss/breakpoints/_base.scss */
-#logo {
-  margin: 0.75em 0;
-}
-/* line 153, ../scss/breakpoints/_base.scss */
-#logo a {
-  color: white;
+/* line 152, ../scss/breakpoints/_base.scss */
+#logo img {
+  margin: 2em 1em;
+  width: 341px;
+  height: 210px;
 }
 
 /*********************
