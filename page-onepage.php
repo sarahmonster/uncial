@@ -31,7 +31,7 @@ foreach ($pages as $post) :
             </div>
         </div>
         
-        <?php if (the_slug == "news"): ?>
+        <?php if (the_slug() == "news"): ?>
             <a class="direction-button up" data-slide="1" title="Back to top"></a>
         <?php else: ?>
             <div class="skip-text"><h3>Skip this page?</h3></div>
@@ -41,29 +41,6 @@ foreach ($pages as $post) :
     </div>
     
     
-    <!-- TRANSITION SLIDES: MAY OR MAY NOT BE REQUIRED 
-    <div class="middle-slide" data-stellar-background-ratio="2.5">
-        
-        <?php if (the_slug == "home"):  ?>
-        <img id="the-books" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/books.png" alt="The Books" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-        <img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
-        
-        <?php elseif (the_slug == "books"):  ?>
-        <img id="the-author" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/author.png" alt="The Author" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-        <img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
-        
-        <?php elseif (the_slug == "about-the-author"):  ?>
-        <img id="the-news" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/news.png" alt="The Latest News" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-        <img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
-
-        <?php elseif (the_slug == "news"):  ?>
-        <img id="the-end" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/end.png" alt="The End" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-        <img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
-
-        <?php endif; ?>
-        
-    </div>
-    -->
     
 <?php endforeach; ?>
 <?php wp_reset_postdata(); ?>
