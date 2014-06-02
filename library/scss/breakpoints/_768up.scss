@@ -42,7 +42,13 @@ html, body, #container {
 #home {
     
     .entry-content {
-        text-align: right;
+        position: absolute;
+        bottom: 5%;
+        right: 20%;
+        span {
+            display: block;
+            text-indent: 6em;
+        }
     }
     
     blockquote {

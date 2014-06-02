@@ -231,35 +231,42 @@ html, body, #container {
 /* individual page panels */
 /* line 44, ../scss/breakpoints/_768up.scss */
 #home .entry-content {
-  text-align: right;
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
 }
 /* line 48, ../scss/breakpoints/_768up.scss */
+#home .entry-content span {
+  display: block;
+  text-indent: 6em;
+}
+/* line 54, ../scss/breakpoints/_768up.scss */
 #home blockquote {
   font-size: 2em;
   margin-top: 25%;
 }
-/* line 53, ../scss/breakpoints/_768up.scss */
+/* line 59, ../scss/breakpoints/_768up.scss */
 #home .direction-button {
   display: block;
 }
 
-/* line 61, ../scss/breakpoints/_768up.scss */
+/* line 67, ../scss/breakpoints/_768up.scss */
 #books .sixcol.last {
   clear: none;
   padding-top: 0;
 }
-/* line 68, ../scss/breakpoints/_768up.scss */
+/* line 74, ../scss/breakpoints/_768up.scss */
 #books .pre-order div {
   padding: 10px 20px;
 }
 
-/* line 75, ../scss/breakpoints/_768up.scss */
+/* line 81, ../scss/breakpoints/_768up.scss */
 #news {
   padding-top: 0;
   padding-bottom: 0;
   height: calc(100% + 30px);
 }
-/* line 80, ../scss/breakpoints/_768up.scss */
+/* line 86, ../scss/breakpoints/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -268,16 +275,16 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
-/* line 89, ../scss/breakpoints/_768up.scss */
+/* line 95, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt {
   width: 46.4779%;
   margin-bottom: 2.1409%;
 }
-/* line 93, ../scss/breakpoints/_768up.scss */
+/* line 99, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt.first {
   margin-right: 2.1409%;
 }
-/* line 97, ../scss/breakpoints/_768up.scss */
+/* line 103, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt.last {
   margin-left: 2.1409%;
 }
