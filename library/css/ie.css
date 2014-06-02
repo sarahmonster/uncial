@@ -201,66 +201,65 @@ html, body, #container {
   position: relative;
   background: transparent;
   padding: 0;
-  border: 1px solid red;
 }
 
-/* line 19, ../scss/breakpoints/_768up.scss */
+/* line 18, ../scss/breakpoints/_768up.scss */
 .inner-content {
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 24, ../scss/breakpoints/_768up.scss */
+/* line 23, ../scss/breakpoints/_768up.scss */
 .inner-content .entry-content {
   padding-top: 160px;
 }
 
 /* skip text */
-/* line 30, ../scss/breakpoints/_768up.scss */
+/* line 29, ../scss/breakpoints/_768up.scss */
 .skip-text {
   display: none;
 }
 
 /* down buttons */
-/* line 36, ../scss/breakpoints/_768up.scss */
+/* line 35, ../scss/breakpoints/_768up.scss */
 .direction-button {
   top: auto;
   bottom: 20px;
 }
 
 /* individual page panels */
-/* line 45, ../scss/breakpoints/_768up.scss */
-#home #mobile-logo {
-  display: none;
+/* line 44, ../scss/breakpoints/_768up.scss */
+#home .entry-content {
+  text-align: right;
 }
-/* line 49, ../scss/breakpoints/_768up.scss */
+/* line 48, ../scss/breakpoints/_768up.scss */
 #home blockquote {
   font-size: 2em;
   margin-top: 25%;
 }
-/* line 54, ../scss/breakpoints/_768up.scss */
+/* line 53, ../scss/breakpoints/_768up.scss */
 #home .direction-button {
   display: block;
 }
 
-/* line 62, ../scss/breakpoints/_768up.scss */
+/* line 61, ../scss/breakpoints/_768up.scss */
 #books .sixcol.last {
   clear: none;
   padding-top: 0;
 }
-/* line 69, ../scss/breakpoints/_768up.scss */
+/* line 68, ../scss/breakpoints/_768up.scss */
 #books .pre-order div {
   padding: 10px 20px;
 }
 
-/* line 76, ../scss/breakpoints/_768up.scss */
+/* line 75, ../scss/breakpoints/_768up.scss */
 #news {
   padding-top: 0;
   padding-bottom: 0;
   height: calc(100% + 30px);
 }
-/* line 81, ../scss/breakpoints/_768up.scss */
+/* line 80, ../scss/breakpoints/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -269,16 +268,16 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
-/* line 90, ../scss/breakpoints/_768up.scss */
+/* line 89, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt {
   width: 46.4779%;
   margin-bottom: 2.1409%;
 }
-/* line 94, ../scss/breakpoints/_768up.scss */
+/* line 93, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt.first {
   margin-right: 2.1409%;
 }
-/* line 98, ../scss/breakpoints/_768up.scss */
+/* line 97, ../scss/breakpoints/_768up.scss */
 #news .news-excerpt.last {
   margin-left: 2.1409%;
 }

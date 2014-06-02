@@ -14,7 +14,6 @@ html, body, #container {
     position: relative;
     background: transparent;
     padding: 0;
-    border: 1px solid red;
 }
 .inner-content {
     height: 100%;
@@ -42,8 +41,8 @@ html, body, #container {
 /* individual page panels */
 #home {
     
-    #mobile-logo {
-        display: none;
+    .entry-content {
+        text-align: right;
     }
     
     blockquote {
