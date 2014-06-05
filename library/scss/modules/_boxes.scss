@@ -1,0 +1,34 @@
+/******************************************************************
+Site Name: Erin Lindsey
+Author: sarah semark
+
+Stylesheet: Box Styles
+
+These boxes and containers are used in various places to hold content.
+
+******************************************************************/
+
+%box {
+  position: relative;
+  border: 1px solid $border-color;
+  background: rgba(255,255,255,.5);  
+  padding: 4em;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 1em;
+    left: 1em;
+    border: 1px solid $border-color;
+    background: rgba(255,255,255,.5);  
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+  }
+} 
+
+.box {
+  @extend %box;
+}

@@ -1134,6 +1134,37 @@ and it will create a button dependant on those variables.
 }
 
 /******************************************************************
+Site Name: Erin Lindsey
+Author: sarah semark
+
+Stylesheet: Box Styles
+
+These boxes and containers are used in various places to hold content.
+
+******************************************************************/
+/* line 11, ../scss/modules/_boxes.scss */
+.box {
+  position: relative;
+  border: 1px solid #231c17;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4em;
+  z-index: 1;
+}
+/* line 18, ../scss/modules/_boxes.scss */
+.box:before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 1em;
+  left: 1em;
+  border: 1px solid #231c17;
+  background: rgba(255, 255, 255, 0.5);
+  height: calc(100% - 2em);
+  width: calc(100% - 2em);
+}
+
+/******************************************************************
 Site Name:
 Author:
 
@@ -1687,7 +1718,7 @@ POSTS & CONTENT STYLES
   background-color: white;
   border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #cccccc;
+  border: 1px solid #231c17;
 }
 /* line 281, ../scss/breakpoints/_base.scss */
 .hentry header {
@@ -2130,7 +2161,7 @@ SIDEBARS & ASIDES
   background-color: white;
   padding: 1.5em;
   text-align: center;
-  border: 1px solid #cccccc;
+  border: 1px solid #231c17;
   border-radius: 2px;
   margin-bottom: 1.5em;
 }
