@@ -14,10 +14,6 @@ foreach ($pages as $post) :
     ?>
     <div id="<?php echo the_slug(); ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
     
-    <?php if (the_slug() == "news"): ?>
-        <img id="smoke-two" src="<?php echo get_template_directory_uri(); ?>/library/images/smoky.png" alt="Smoke Layer" data-stellar-ratio="2.5" />
-    <?php endif; ?>
-    
         <div class="inner-content wrap clearfix">
             <div class="twelvecol first last clearfix entry-content" role="main">
                 <?php if (the_slug() != "home"):  echo the_title('<h1>', '</h1>');  endif; ?>
@@ -45,6 +41,6 @@ foreach ($pages as $post) :
 <?php endforeach; ?>
 <?php wp_reset_postdata(); ?>
 
-<img id="smoke" src="<?php echo get_template_directory_uri(); ?>/library/images/smoke.png" alt="smoke" width="547" height="820" data-stellar-ratio="3.5"/>
+<img id="sword" src="<?php echo get_template_directory_uri(); ?>/library/images/sword.png" alt="smoke" width="490" height="1753" data-stellar-ratio="3.5"/>
 
 <?php get_footer(); ?>

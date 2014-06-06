@@ -289,6 +289,14 @@ html, body, #container {
   margin-left: 2.1409%;
 }
 
+/* line 110, ../scss/breakpoints/_768up.scss */
+#sword {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: -100px;
+}
+
 /******************************************************************
 Site Name:
 Author:
