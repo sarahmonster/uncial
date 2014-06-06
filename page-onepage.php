@@ -41,6 +41,6 @@ foreach ($pages as $post) :
 <?php endforeach; ?>
 <?php wp_reset_postdata(); ?>
 
-<img id="sword" src="<?php echo get_template_directory_uri(); ?>/library/images/sword.png" alt="smoke" width="490" height="1753" data-stellar-ratio="3.5"/>
+<img id="sword" src="<?php echo get_template_directory_uri(); ?>/library/images/sword.png" alt="smoke" width="490" height="1753" data-stellar-ratio=".40"/>
 
 <?php get_footer(); ?>

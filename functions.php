@@ -199,5 +199,12 @@ function the_slug() {
     return $slug;
 }
 
+/* Load custom JS */
+function uncial_scripts() {
+  wp_enqueue_script( 'stellar', get_template_directory_uri() . '/library/js/stellar.js', array(), '1.0.0', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'uncial_scripts' );
+
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
