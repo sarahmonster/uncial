@@ -2403,8 +2403,8 @@ you can add resource intensive styles.
   /* line 110, ../scss/breakpoints/_768up.scss */
   #sword {
     display: block;
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: -700px;
     right: -100px;
   }
 }

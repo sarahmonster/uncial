@@ -109,7 +109,7 @@ html, body, #container {
 
 #sword {
     display: block;
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: -700px;
     right: -100px;
 }
