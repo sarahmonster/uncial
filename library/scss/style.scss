@@ -39,6 +39,8 @@ the whole project.
 @import "partials/mixins";
 
 // the grid
+@import "compass";
+@import "susy"; 
 @import "partials/grid";
 
 /*********************

@@ -1,337 +1,102 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: IE Stylesheet
-
-So instead of using the respond.js file to add media query support
-to IE, we're going to use SASS to create an easily readable css file.
-Here, we import all the styles the standard stylesheet gets, only
-without the media queries. No need to worry about editing anything!
-
-******************************************************************/
-/******************************************************************
-IMPORTS & DEPENDENCIES
-Remember, all the BASE styles are called already since IE can
-read those. Below, we need to import only the stuff IE can't
-understand (what's inside the media queries). We also need to
-import the mixins file so SASS can understand the variables.
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
-******************************************************************/
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
 /*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
+Syntax error: Undefined mixin 'span'.
+        on line 68 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'
+        from line 68 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss
+        from line 29 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss
+
+Backtrace:
+/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:68:in `span'
+/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:68
+/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss:29
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:98:in `with_mixin'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `map'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `map'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:297:in `block (2 levels) in visit_import'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:297:in `map'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:297:in `block in visit_import'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:88:in `block in with_import'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:88:in `with_import'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
+/Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/compiler.rb:24:in `compile'
+/Users/sarah/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/forwardable.rb:183:in `compile'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:101:in `sass_modified'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:89:in `sass_callback'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `call'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `run_callback'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:69:in `block in listen_callback'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `each'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `listen_callback'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `call'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
+/Users/sarah/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
 */
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Mixins Stylesheet
-
-This is where you can take advantage of Sass' great features: Mixins.
-I won't go in-depth on how they work exactly,
-there are a few articles below that will help do that. What I will
-tell you is that this will help speed up simple changes like
-changing a color or adding CSS3 techniques gradients.
-
-A WORD OF WARNING: It's very easy to overdo it here. Be careful and
-remember less is more.
-
-Helpful:
-http://sachagreif.com/useful-sass-mixins/
-http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
-http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
-
-******************************************************************/
-/*********************
-TRANSITION
-*********************/
-/*
-I totally rewrote this to be cleaner and easier to use.
-You'll need to be using Sass 3.2+ for these to work.
-Thanks to @anthonyshort for the inspiration on these.
-USAGE: @include transition(all 0.2s ease-in-out);
-*/
-/*********************
-CSS3 GRADIENTS
-Be careful with these since they can
-really slow down your CSS. Don't overdo it.
-*********************/
-/* @include css-gradient(#dfdfdf,#f8f8f8); */
-/*********************
-BOX SIZING
-*********************/
-/* @include box-sizing(border-box); */
-/* NOTE: value of "padding-box" is only supported in Gecko. So
-probably best not to use it. I mean, were you going to anyway? */
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: IE Grid Styles
-
-Since the example grid is based on media queries, so rather than
-setup some js library that would make IE8 and below understand
-media queries, let's just add some styles that serves a fixed grid.
-
-Again, if you want to roll your own, just remove this junk and put
-whatever you use in here.
-
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 481px and Up Stylesheet
-
-This stylesheet is loaded for larger devices. It's set to
-481px because at 480px it would load on a landscaped iPhone.
-This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection.
-
-A word of warning. This size COULD be a larger mobile device,
-so you still want to keep it pretty light and simply expand
-upon your base.scss styles.
-
-******************************************************************/
-/*
-IMPORTANT NOTE ABOUT SASS 3.3 & UP
-You can't use @extend within media queries
-anymore, so just be aware that if you drop
-them in here, they won't work.
-*/
-/*********************
-NAVIGATION STYLES
-*********************/
-/* .menu is clearfixed inside mixins.scss */
-/* line 33, ../scss/breakpoints/_481up.scss */
-.menu {
-  /* end .menu ul */
-}
-/* line 34, ../scss/breakpoints/_481up.scss */
-.menu ul {
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-/* line 35, ../scss/breakpoints/_481up.scss */
-.menu ul li {
-  /*
-  plan your menus and drop-downs wisely.
-  */
-}
-/* line 36, ../scss/breakpoints/_481up.scss */
-.menu ul li a {
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-
-/* end .menu */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-/* entry content */
-/* line 81, ../scss/breakpoints/_481up.scss */
-.entry-content {
-  /* at this larger size, we can start to align images */
-}
-/* line 85, ../scss/breakpoints/_481up.scss */
-.entry-content .alignleft, .entry-content img.alignleft {
-  margin-right: 1.5em;
-  display: inline;
-  float: left;
-}
-/* line 90, ../scss/breakpoints/_481up.scss */
-.entry-content .alignright, .entry-content img.alignright {
-  margin-left: 1.5em;
-  display: inline;
-  float: right;
-}
-/* line 95, ../scss/breakpoints/_481up.scss */
-.entry-content .aligncenter, .entry-content img.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  clear: both;
-}
-
-/* end .entry-content */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-/* end .footer-links */
-/*********************
-PARALLAX PANEL STYLES
-*********************/
-/* line 4, ../scss/breakpoints/_768up.scss */
-html, body, #container {
-  width: 100%;
-  height: 100%;
-}
-
-/* main panels */
-/* line 10, ../scss/breakpoints/_768up.scss */
-.page-panel {
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: transparent;
-  padding: 0;
-}
-
-/* line 18, ../scss/breakpoints/_768up.scss */
-.inner-content {
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* line 23, ../scss/breakpoints/_768up.scss */
-.inner-content .entry-content {
-  padding-top: 160px;
-}
-
-/* skip text */
-/* line 29, ../scss/breakpoints/_768up.scss */
-.skip-text {
-  display: none;
-}
-
-/* down buttons */
-/* line 35, ../scss/breakpoints/_768up.scss */
-.direction-button {
-  top: auto;
-  bottom: 20px;
-}
-
-/* individual page panels */
-/* line 44, ../scss/breakpoints/_768up.scss */
-#home .entry-content {
-  position: absolute;
-  bottom: 5%;
-  right: 20%;
-}
-/* line 48, ../scss/breakpoints/_768up.scss */
-#home .entry-content span {
-  display: block;
-  text-indent: 6em;
-}
-/* line 54, ../scss/breakpoints/_768up.scss */
-#home blockquote {
-  font-size: 2em;
-  margin-top: 25%;
-}
-/* line 59, ../scss/breakpoints/_768up.scss */
-#home .direction-button {
-  display: block;
-}
-
-/* line 67, ../scss/breakpoints/_768up.scss */
-#books .sixcol.last {
-  clear: none;
-  padding-top: 0;
-}
-/* line 74, ../scss/breakpoints/_768up.scss */
-#books .pre-order div {
-  padding: 10px 20px;
-}
-
-/* line 81, ../scss/breakpoints/_768up.scss */
-#news {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: calc(100% + 30px);
-}
-/* line 86, ../scss/breakpoints/_768up.scss */
-#news #smoke-two {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  left: 0;
-  opacity: .5;
-  pointer-events: none;
-}
-/* line 95, ../scss/breakpoints/_768up.scss */
-#news .news-excerpt {
-  width: 46.4779%;
-  margin-bottom: 2.1409%;
-}
-/* line 99, ../scss/breakpoints/_768up.scss */
-#news .news-excerpt.first {
-  margin-right: 2.1409%;
-}
-/* line 103, ../scss/breakpoints/_768up.scss */
-#news .news-excerpt.last {
-  margin-left: 2.1409%;
-}
-
-/* line 110, ../scss/breakpoints/_768up.scss */
-#sword {
-  display: block;
-  position: fixed;
-  top: -700px;
-  right: -100px;
-}
-
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Desktop Stylsheet
-
-This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop.
-
-******************************************************************/
-/* line 12, ../scss/breakpoints/_1030up.scss */
-.wrap {
-  width: 1040px;
-}
-
-/*
-you can call the larger styles if you want, but there's really no need
-*/
-/******************************************************************
-ADDITIONAL IE FIXES
-These fixes are now ONLY seen by IE, so you don't have to worry
-about using prefixes, although it's best practice. For more info
-on using Modernizr classes, check out this link:
-http://www.modernizr.com/docs/
-******************************************************************/
-/*
-For example, you can use something like:
-
-.no-textshadow .class { ... }
-
-You can also target specific versions by using the classes applied to
-the html element. These can sometimes change, so take a look inside the
-header.php file to see what they are:
-
-
-.lt-ie8 .class { ... }
-
-*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'span'.\A         on line 68 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'\A         from line 68 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss\A         from line 29 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss"; }

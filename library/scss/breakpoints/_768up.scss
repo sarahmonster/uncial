@@ -63,17 +63,17 @@ html, body, #container {
 
 
 #books {
-
-    .sixcol.last {
-        clear: none;
-        padding-top: 0;
-    }
     
     .pre-order {
-    
+        @include span(4);
         div {
             padding: 10px 20px;
         }
+    }
+
+    .synopsis {
+        @include span(8); 
+        margin-right: 0;
     }
 }
 
