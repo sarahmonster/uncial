@@ -27,7 +27,6 @@ $white:             #fff;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
-$text-color:        #5c6b80;
 $meta-gray:         #9fa6b4;
 
 $teal:              #293640;
@@ -36,10 +35,11 @@ $blue:              #97b2b2;
 $red:               #4e0707;
 $garnet:            #3f1e25;
 
+$text-color:        darken($brown, 5%);
 $link-color:        $red;
 $link-hover:        darken($link-color, 9%);
 
-$border-color:      darken($brown, 20%);
+$border-color:      lighten($blue, 30%);
 $disabled-gray:     #cfcfcf;
 
 

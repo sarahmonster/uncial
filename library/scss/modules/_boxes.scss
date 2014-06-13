@@ -12,7 +12,7 @@ These boxes and containers are used in various places to hold content.
   position: relative;
   border: 1px solid $border-color;
   background: rgba(255,255,255,.5);  
-  padding: 4em;
+  padding: 3em;
   z-index: 1;
 
   &:before {
@@ -22,10 +22,10 @@ These boxes and containers are used in various places to hold content.
     z-index: -1;
     top: 1em;
     left: 1em;
-    border: 1px solid $border-color;
+    border: 2px solid $border-color;
     background: rgba(255,255,255,.5);  
-    height: calc(100% - 2em);
-    width: calc(100% - 2em);
+    height: calc(100% - 2em - 2px);
+    width: calc(100% - 2em - 2px);
   }
 } 
 

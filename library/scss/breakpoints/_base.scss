@@ -108,20 +108,37 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: normal;
-	font-family: $display;
-	a { text-decoration: none;}
+	font-family: $serif;
+	a {text-decoration: none;}
 }
 
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
-	color: $brown;
+	color: $teal;
+	font-family: $display;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
+	display: inline-block;
+	margin: 1em auto .75em;
+	border-top: 2px solid $brown;
+	border-bottom: 2px solid $brown;
+	padding: 5px 5px;
+	font-size: .8em;
 	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	color: $brown;
+	text-align: center;
+	font-weight: bolder;
+	font-family: $serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+h2:before, .h2:before, h2:after, .h2:after {
+	content: '\2666';
+	padding: 0 10px;
+	display: inline;
+	font-size: .8em
 }
 
 h3, .h3 {
@@ -264,8 +281,12 @@ PANEL STYLES
 		text-align: center;
 		color: $blue;
 		
-		h2 {color:lighten($blue, 5%);}
-		a {color: darken($white, 20%);}
+		h2 {
+			color: lighten($blue, 20%);
+			border-color: lighten($blue, 20%);
+		}
+
+		a {color: lighten($brown, 60%);}
 	}
 }
 
