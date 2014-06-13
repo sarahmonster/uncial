@@ -272,6 +272,16 @@ PANEL STYLES
 #about-the-author {
 	background: url('../images/stone.jpg') top center;
 	background-size: cover;
+
+	.author-info {
+		@extend %box;
+	}
+
+	.agent, .publicity {
+		text-align: center;
+		font-size: .8em;
+		margin-top: 1em;
+	}
 }
 
 #news {

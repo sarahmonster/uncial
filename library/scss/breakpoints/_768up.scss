@@ -66,9 +66,8 @@ html, body, #container {
     
     .pre-order {
         @include span(4);
-        div {
-            padding: 10px 20px;
-        }
+
+        div {padding: 10px 20px;}
     }
 
     .synopsis {
@@ -77,6 +76,17 @@ html, body, #container {
     }
 }
 
+#about-the-author {
+    
+    .author-info {
+        @include span(6);
+    }
+
+    .contact {
+        @include span(6);
+        margin-right: 0;
+    }
+}
 
 #news {
     padding-top: 0;

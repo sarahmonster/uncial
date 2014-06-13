@@ -12,7 +12,7 @@ $count = 1;
 foreach ($pages as $post) :
     setup_postdata($post);
     ?>
-    <div id="<?php echo the_slug(); ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
+    <div id="<?php echo the_slug(); ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.25">
     
         <div class="inner-content wrap clearfix">
             <div class="clearfix entry-content" role="main">
