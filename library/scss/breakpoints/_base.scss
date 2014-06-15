@@ -308,6 +308,17 @@ PANEL STYLES
 #news {
 	background: url('../images/wall.jpg') top center;
 	background-size: cover;
+
+	.news-excerpt {
+    	@extend %box;
+    	margin-top: 1em;
+    	padding: 1em 2em;
+
+    	h2 {
+    		display: block;
+    		text-align: center;
+    	}
+    }
 }
 
 #sword {

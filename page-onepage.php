@@ -20,6 +20,7 @@ foreach ($pages as $post) :
                 <?php echo the_content(); ?>
                 
                 <?php if (the_slug() == "news"): ?>
+                    <?php echo the_title('<h1>', '</h1>'); ?>
                     <?php get_template_part('news'); ?>
                     <div class="clearfix center"><a class="button" href="/news">Read all news posts</a></div>
                 <?php endif; ?> 
@@ -41,6 +42,6 @@ foreach ($pages as $post) :
 <?php endforeach; ?>
 <?php wp_reset_postdata(); ?>
 
-<img id="sword" src="<?php echo get_template_directory_uri(); ?>/library/images/sword.png" alt="smoke" width="490" height="1753" data-stellar-ratio=".05"/>
+<img id="sword" src="<?php echo get_template_directory_uri(); ?>/library/images/sword.png" alt="smoke" width="490" height="1753" data-stellar-ratio=".5"/>
 
 <?php get_footer(); ?>
