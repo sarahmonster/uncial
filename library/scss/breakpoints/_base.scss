@@ -22,6 +22,7 @@ body {
 	color: $text-color;
 	background-color: $gray;
 }
+.center {text-align: center;}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -262,6 +263,7 @@ and more scalable.
 PANEL STYLES
 *********************/
 
+.page-panel .clearfix {clear: both;}
 #home {
 	background: url('../images/snow.jpg') top center;
 	background-size: cover;
@@ -309,6 +311,11 @@ PANEL STYLES
 	background: url('../images/wall.jpg') top center;
 	background-size: cover;
 
+	h1 {
+		text-align: center;
+		color: lighten($brown, 50%);
+	}
+	
 	.news-excerpt {
     	@extend %box;
     	margin-top: 1em;
@@ -812,7 +819,7 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
+		@extend .button;
 		font-size: 0.9em;
 		float: right;
 
@@ -868,7 +875,7 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
+		@extend .button;
 		float: right;
 		font-size: 1em;
 	}
