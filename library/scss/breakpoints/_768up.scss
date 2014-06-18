@@ -6,10 +6,20 @@ header[role=banner] {
     text-align: center;
     width: 100%;
 
-    #logo img {
-        margin: 4em auto;
-        width: 616px;
-        height: 159px;
+    #logo {
+        margin: 2em auto;
+        position: relative;
+
+        img {
+            width: 616px;
+            height: 159px;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 50px;
+            left: 150px;
+        }
     }
 }
 
