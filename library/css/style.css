@@ -1459,7 +1459,7 @@ PANEL STYLES
 
 /* line 262, ../scss/breakpoints/_base.scss */
 #books {
-  background: url("../images/granite.jpg") top center;
+  background: url("../images/grille.jpg") top center;
   background-size: cover;
 }
 /* line 266, ../scss/breakpoints/_base.scss */
@@ -1486,7 +1486,7 @@ PANEL STYLES
 
 /* line 285, ../scss/breakpoints/_base.scss */
 #about-the-author {
-  background: url("../images/stone.jpg") top center;
+  background: url("../images/burlap.jpg") top center;
   background-size: cover;
 }
 /* line 293, ../scss/breakpoints/_base.scss */
