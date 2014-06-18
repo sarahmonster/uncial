@@ -1,4 +1,21 @@
 /*********************
+NAVIGATION STYLES
+*********************/
+
+#main-nav {
+    background: url('../images/flag.png') no-repeat;
+    background-size: cover;
+    width: 312px;
+    height: 756px;
+    margin-top: -50px;
+
+    ul {
+        padding: 100px 0 0 100px;
+    }
+}
+
+
+/*********************
 PARALLAX PANEL STYLES
 *********************/
 html, body, #container {

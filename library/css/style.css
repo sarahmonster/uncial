@@ -2111,16 +2111,32 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /*********************
+  NAVIGATION STYLES
+  *********************/
+  /* line 5, ../scss/breakpoints/_768up.scss */
+  #main-nav {
+    background: url("../images/flag.png") no-repeat;
+    background-size: cover;
+    width: 312px;
+    height: 756px;
+    margin-top: -50px;
+  }
+  /* line 12, ../scss/breakpoints/_768up.scss */
+  #main-nav ul {
+    padding: 100px 0 0 100px;
+  }
+
+  /*********************
   PARALLAX PANEL STYLES
   *********************/
-  /* line 4, ../scss/breakpoints/_768up.scss */
+  /* line 21, ../scss/breakpoints/_768up.scss */
   html, body, #container {
     width: 100%;
     height: 100%;
   }
 
   /* main panels */
-  /* line 10, ../scss/breakpoints/_768up.scss */
+  /* line 27, ../scss/breakpoints/_768up.scss */
   .page-panel {
     background-attachment: fixed;
     width: 100%;
@@ -2130,64 +2146,64 @@ you can add resource intensive styles.
     padding: 0;
   }
 
-  /* line 18, ../scss/breakpoints/_768up.scss */
+  /* line 35, ../scss/breakpoints/_768up.scss */
   .inner-content {
     height: 100%;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 23, ../scss/breakpoints/_768up.scss */
+  /* line 40, ../scss/breakpoints/_768up.scss */
   .inner-content .entry-content {
     padding-top: 4em;
   }
 
   /* skip text */
-  /* line 29, ../scss/breakpoints/_768up.scss */
+  /* line 46, ../scss/breakpoints/_768up.scss */
   .skip-text {
     display: none;
   }
 
   /* down buttons */
-  /* line 35, ../scss/breakpoints/_768up.scss */
+  /* line 52, ../scss/breakpoints/_768up.scss */
   .direction-button {
     top: auto;
     bottom: 20px;
   }
 
   /* individual page panels */
-  /* line 44, ../scss/breakpoints/_768up.scss */
+  /* line 61, ../scss/breakpoints/_768up.scss */
   #home .entry-content {
     position: absolute;
     bottom: 5%;
     right: 20%;
   }
-  /* line 48, ../scss/breakpoints/_768up.scss */
+  /* line 65, ../scss/breakpoints/_768up.scss */
   #home .entry-content span {
     display: block;
     text-indent: 6em;
   }
-  /* line 54, ../scss/breakpoints/_768up.scss */
+  /* line 71, ../scss/breakpoints/_768up.scss */
   #home blockquote {
     font-size: 2em;
     margin-top: 25%;
   }
-  /* line 59, ../scss/breakpoints/_768up.scss */
+  /* line 76, ../scss/breakpoints/_768up.scss */
   #home .direction-button {
     display: block;
   }
 
-  /* line 67, ../scss/breakpoints/_768up.scss */
+  /* line 84, ../scss/breakpoints/_768up.scss */
   #books .pre-order {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 70, ../scss/breakpoints/_768up.scss */
+  /* line 87, ../scss/breakpoints/_768up.scss */
   #books .pre-order div {
     padding: 10px 20px;
   }
-  /* line 73, ../scss/breakpoints/_768up.scss */
+  /* line 90, ../scss/breakpoints/_768up.scss */
   #books .synopsis {
     width: 66.10169%;
     float: left;
@@ -2196,13 +2212,13 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 81, ../scss/breakpoints/_768up.scss */
+  /* line 98, ../scss/breakpoints/_768up.scss */
   #about-the-author .author-info {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 85, ../scss/breakpoints/_768up.scss */
+  /* line 102, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact {
     width: 49.15254%;
     float: left;
@@ -2211,30 +2227,30 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 91, ../scss/breakpoints/_768up.scss */
+  /* line 108, ../scss/breakpoints/_768up.scss */
   #news {
     padding-top: 0;
     padding-bottom: 0;
     height: calc(100% + 30px);
   }
-  /* line 96, ../scss/breakpoints/_768up.scss */
+  /* line 113, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 99, ../scss/breakpoints/_768up.scss */
+  /* line 116, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(3n) {
     float: right;
     margin-right: 0;
   }
-  /* line 103, ../scss/breakpoints/_768up.scss */
+  /* line 120, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(4n) {
     margin-left: 0;
     clear: left;
   }
 
-  /* line 111, ../scss/breakpoints/_768up.scss */
+  /* line 128, ../scss/breakpoints/_768up.scss */
   #sword {
     display: block;
     position: fixed;
