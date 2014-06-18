@@ -2134,22 +2134,22 @@ you can add resource intensive styles.
     left: 0;
     background: url("../images/flag.png") no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 848px;
+    width: 322px;
+    height: 780.16px;
   }
   /* line 30, ../scss/breakpoints/_768up.scss */
   #main-nav ul {
     border: 0;
-    padding: 60px 0 0 75px;
+    padding: 60px 0 0 65px;
   }
   /* line 34, ../scss/breakpoints/_768up.scss */
   #main-nav ul li {
     text-align: center;
     background-repeat: no-repeat;
-    height: 140px;
-    width: 120px;
-    background-size: 120px 120px;
-    padding-top: 110px;
+    height: 125px;
+    width: 110px;
+    background-size: 110px 110px;
+    padding-top: 100px;
   }
   /* line 42, ../scss/breakpoints/_768up.scss */
   #main-nav ul li#home-link {
