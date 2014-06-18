@@ -47,7 +47,7 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="<?php echo bloginfo('name'); ?>"></a>
+					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-horizontal.png" alt="<?php echo bloginfo('name'); ?>"></a>
 
 					<nav role="navigation" id="main-nav">
 						<ul>
