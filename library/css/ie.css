@@ -1,12 +1,12 @@
 /*
 Syntax error: Undefined mixin 'span'.
-        on line 85 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'
-        from line 85 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss
+        on line 107 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'
+        from line 107 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss
         from line 29 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss
 
 Backtrace:
-/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:85:in `span'
-/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:85
+/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:107:in `span'
+/Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss:107
 /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss:29
 /Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /Users/sarah/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.8/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -99,4 +99,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'span'.\A         on line 85 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'\A         from line 85 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss\A         from line 29 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss"; }
+  content: "Syntax error: Undefined mixin 'span'.\A         on line 107 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss, in `span'\A         from line 107 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/breakpoints/_768up.scss\A         from line 29 of /Users/sarah/Dropbox/Sites/erin-lindsey.com/wp-content/themes/uncial/library/scss/ie.scss"; }

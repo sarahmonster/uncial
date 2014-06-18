@@ -51,10 +51,10 @@
 
 					<nav role="navigation" id="main-nav">
 						<ul>
-                            <li><a href="<?php echo home_url(); ?>#home">Home</a></li>
-                            <li><a href="<?php echo home_url(); ?>#books">Books</a></li>
-                            <li><a href="<?php echo home_url(); ?>#about-the-author">About</a></li>
-                            <li><a href="<?php echo home_url(); ?>#news">News</a></li>
+                            <li id="home-link"><a href="<?php echo home_url(); ?>#home">Home</a></li>
+                            <li id="books-link"><a href="<?php echo home_url(); ?>#books">Books</a></li>
+                            <li id="about-link"><a href="<?php echo home_url(); ?>#about-the-author">About</a></li>
+                            <li id="news-link"><a href="<?php echo home_url(); ?>#news">News</a></li>
                         </ul>
 					</nav>
 
