@@ -156,11 +156,11 @@ html, body, #container {
 #about-the-author {
     
     .author-info {
-        @include span(6);
+        @include span(7);
     }
 
     .contact {
-        @include span(6);
+        @include span(5);
         @include omega;
     }
 }
