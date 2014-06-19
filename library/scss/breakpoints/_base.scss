@@ -314,13 +314,15 @@ PANEL STYLES
 	}
 	
 	.news-excerpt {
-    	@extend %box;
     	margin-top: 1em;
     	padding: 1em 2em;
+    	color: $white;
 
     	h2 {
     		display: block;
     		text-align: center;
+
+    		a {color: darken($brown, 10%);}
     	}
     }
 
