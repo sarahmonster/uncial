@@ -2329,7 +2329,7 @@ you can add resource intensive styles.
   #sword {
     display: block;
     position: fixed;
-    top: -700px;
+    top: -200px;
     right: -100px;
   }
 }
