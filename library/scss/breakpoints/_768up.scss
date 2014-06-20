@@ -191,3 +191,19 @@ html, body, #container {
     top: -200px;
     right: -100px;
 }
+
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+    margin-top: 300px;
+}
+
+    .hentry {
+        margin-bottom: 1.5em;
+        @include span(10);
+        @include omega;
+    }
