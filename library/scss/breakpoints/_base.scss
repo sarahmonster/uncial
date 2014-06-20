@@ -21,6 +21,8 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $gray;
+	background: url('../images/snow.jpg') bottom center fixed;
+	background-size: cover;
 }
 .center {text-align: center;}
 
@@ -255,7 +257,7 @@ PANEL STYLES
 
 .page-panel .clearfix {clear: both;}
 #home {
-	background: url('../images/snow.jpg') top center;
+	background: url('../images/snow.jpg') bottom center;
 	background-size: cover;
 }
 
