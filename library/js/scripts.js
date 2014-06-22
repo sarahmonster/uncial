@@ -112,7 +112,11 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
-  $(window).stellar();
+
+  /* start Stellar for parallax effects */
+  $(window).stellar({
+    horizontalScrolling: false
+  });
 
 
 }); /* end of as page load scripts */
