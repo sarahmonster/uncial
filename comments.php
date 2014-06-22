@@ -12,11 +12,12 @@ if ( post_password_required() ) {
 
 <?php // You can start editing here. ?>
 
+  <section class="commentlist">
+
   <?php if ( have_comments() ) : ?>
 
     <h3 id="comments-title" class="h2"><?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), _n( '<span>%</span> Comments', '<span>%</span> Comments', get_comments_number(), 'bonestheme' ) );?></h3>
 
-    <section class="commentlist">
       <?php
         wp_list_comments( array(
           'style'             => 'div',
@@ -31,7 +32,6 @@ if ( post_password_required() ) {
           'reverse_children'  => ''
         ) );
       ?>
-    </section>
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
     	<nav class="navigation comment-navigation" role="navigation">
@@ -47,4 +47,6 @@ if ( post_password_required() ) {
   <?php endif; ?>
 
   <?php comment_form(); ?>
+
+  </section>
 

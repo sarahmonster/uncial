@@ -207,3 +207,10 @@ POSTS & CONTENT STYLES
         @include span(10);
         @include omega;
     }
+
+
+
+.commentlist {
+    @include span(10);
+    @include omega;
+}

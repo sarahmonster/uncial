@@ -2349,6 +2349,15 @@ you can add resource intensive styles.
     float: right;
     margin-right: 0;
   }
+
+  /* line 213, ../scss/breakpoints/_768up.scss */
+  .commentlist {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    float: right;
+    margin-right: 0;
+  }
 }
 /*********************
 DESKTOP
