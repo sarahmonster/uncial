@@ -344,11 +344,12 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
+			@extend %box;
 			margin-bottom: 1.5em;
 
 			header {
-				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
+				text-align: center;
 			}
 
 			footer {
@@ -388,9 +389,9 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $meta-gray;
-			font-style: italic;
-			margin: 0;
+			color: $blue;
+			margin: .25em;
+			border-color: darken($blue, 10%);
 
 			time {}
 		}
