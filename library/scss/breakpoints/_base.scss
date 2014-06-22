@@ -353,11 +353,34 @@ POSTS & CONTENT STYLES
 			}
 
 			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				padding: 0 1.5em;
 
-				p {
-					margin: 0;
+				a {
+					display: block;
+					background: rgba(255,255,255,.6);
+					width: 49%;
+					padding: .5em 1em;
+					float: left;
+					text-decoration: none;
+					font-style: italic;
+
+					span {
+						display: block;
+						text-transform: uppercase;
+						font-size: .75em;
+						letter-spacing: 1px;
+						font-style: normal;
+					}
+
+					&[rel=prev] {
+						text-align: right;
+						margin-left: 2%;
+					}
+
+					&:hover {
+						background: $white;
+					}
+
 				}
 			}
 

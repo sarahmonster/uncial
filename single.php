@@ -8,22 +8,30 @@
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<?php
-								/*
-								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
-								 *
-								 * So this function will bting in the needed template file depending on what the post
-								 * format is. The different post formats are located in the post-formats folder.
-								 *
-								 *
-								 * REMEMBER TO ALWAYS HAVE A DEFAULT ONE NAMED "format.php" FOR POSTS THAT AREN'T
-								 * A SPECIFIC POST FORMAT.
-								 *
-								 * If you want to remove post formats, just delete the post-formats folder and
-								 * replace the function below with the contents of the "format.php" file.
-								*/
-								get_template_part( 'post-formats/format', get_post_format() );
-							?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+			                <header class="article-header">
+
+			                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+
+			                  <h2 class="byline vcard">
+			                    <?php printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+			                  </h2>
+
+			                </header> <?php // end article header ?>
+
+			                <section class="entry-content cf" itemprop="articleBody">
+			                  <?php the_content(); ?>
+			                </section> <?php // end article section ?>
+
+			              	<footer>
+				              	<?php next_post_link('%link', '<span>Next post</span> %title'); ?>
+								<?php previous_post_link('%link', '<span>Previous post</span> %title'); ?>
+							</footer>
+
+			              </article> <?php // end article ?>
+
+			              <?php comments_template(); ?>
 
 						<?php endwhile; ?>
 
