@@ -197,6 +197,10 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+#main {
+    @include span(10);
+    @include omega;
+}
 
 #content {
     margin-top: 300px;
@@ -204,13 +208,5 @@ POSTS & CONTENT STYLES
 
     .hentry {
         margin-bottom: 1.5em;
-        @include span(10);
-        @include omega;
     }
 
-
-
-.commentlist {
-    @include span(10);
-    @include omega;
-}

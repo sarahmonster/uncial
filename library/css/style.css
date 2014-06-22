@@ -1983,6 +1983,11 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+/* line 911, ../scss/breakpoints/_base.scss */
+.sidebar {
+  display: none;
+}
+
 /* line 919, ../scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
@@ -2335,28 +2340,23 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 201, ../scss/breakpoints/_768up.scss */
+  /* line 200, ../scss/breakpoints/_768up.scss */
+  #main {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 205, ../scss/breakpoints/_768up.scss */
   #content {
     margin-top: 300px;
   }
 
-  /* line 205, ../scss/breakpoints/_768up.scss */
+  /* line 209, ../scss/breakpoints/_768up.scss */
   .hentry {
     margin-bottom: 1.5em;
-    width: 83.05085%;
-    float: left;
-    margin-right: 1.69492%;
-    float: right;
-    margin-right: 0;
-  }
-
-  /* line 213, ../scss/breakpoints/_768up.scss */
-  .commentlist {
-    width: 83.05085%;
-    float: left;
-    margin-right: 1.69492%;
-    float: right;
-    margin-right: 0;
   }
 }
 /*********************
