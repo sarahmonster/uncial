@@ -185,64 +185,37 @@ HEADER STYLES
         }
     }
 
+
 /*********************
 NAVIGATION STYLES
 *********************/
 
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
 
-.nav {
-	margin: 0;
+#main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  	background: url('../images/metal.png');
+  	border-bottom: 2px solid rgba(250,250,250,.5);
+  	text-align: center;
+  	@include box-shadow(0 2px 2px rgba(1,2,2,.35));
 
 	li {
 		display: inline-block;
 
 		a {
 			display: inline-block;
-			color: $red;
+			color: darken($brown, 30%);
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0 .75em;
 		}
 
 		&:first-child {}
 
 		&:last-child {}
 
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
+		ul.sub-menu, ul.children {display: none;}
 
 	} /* end .menu li */
 
@@ -983,7 +956,6 @@ FOOTER STYLES
 	color: $black;
 	text-align: center;
 	font-size: .8em;
-}
 
 	nav {
 
@@ -996,5 +968,5 @@ FOOTER STYLES
 
 	} /* end .footer-links */
 
-
+}
 	.copyright {}
