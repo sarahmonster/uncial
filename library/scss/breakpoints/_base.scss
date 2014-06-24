@@ -165,18 +165,25 @@ HEADER STYLES
 *********************/
 
 .header {
-	position: fixed;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 100;
 }
 
-	#logo img {
-		margin: 4em 2em;
-		width: 390px;
-		height: 225px;
-	}
+	#logo {
+		position: relative;
+
+		img {
+			width: 90%;
+			height: auto;
+			margin: .25em 5% .5em;
+		}
+
+		h2 {
+        	display: none;
+        }
+    }
 
 /*********************
 NAVIGATION STYLES

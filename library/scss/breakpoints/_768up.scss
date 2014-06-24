@@ -8,7 +8,6 @@ header[role=banner] {
 
     #logo {
         margin: 2em auto;
-        position: relative;
 
         img {
             width: 616px;
@@ -16,9 +15,10 @@ header[role=banner] {
         }
 
         h2 {
+            display: block;
             position: absolute;
-            bottom: 50px;
-            left: 150px;
+            bottom: -10px;
+            left: 175px;
         }
     }
 }
@@ -201,7 +201,6 @@ POSTS & CONTENT STYLES
     @include span(10);
     @include omega;
 }
-
 #content {
     margin-top: 300px;
 }
