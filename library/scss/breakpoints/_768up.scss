@@ -36,40 +36,40 @@ NAVIGATION STYLES
     background-size: cover;
     width: 322px;
     height: 780.16px;
+    box-shadow: none;
 
     ul {
         border: 0;
-        padding: 60px 0 0 65px;
+        padding: 70px 0 0 65px;
 
         li {
-            text-align: center;
-            background-repeat: no-repeat;
-            height: 125px;
-            width: 110px;
-            background-size: 110px 110px;
-            padding-top: 100px;
+            display: block;
+            font-size: 1.15em;
 
-            &#home-link {background-image: url('../images/icon-fire.png');}
-            &#books-link {
+            a {
+                display: block;
+                text-align: center;
+                background-repeat: no-repeat;
+                height: 125px;
+                width: 110px;
+                background-size: 110px 110px;
+                padding-top: 100px;
+            }
+
+            &#home-link a {background-image: url('../images/icon-fire.png');}
+            &#books-link a {
                 background-image: url('../images/icon-eye.png');
                 margin-left: 10px;
             }
-            &#about-link {
+            &#about-link a {
                 background-image: url('../images/icon-crow.png');
                 margin-left: 20px;
             }
-            &#news-link {
+            &#news-link a {
                 background-image: url('../images/icon-moon.png');
                 margin-left: 30px;
             }
 
-            a {
-                text-decoration: none;
-                color: $brown;
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 1px;
-            }
         }
     }
 }
