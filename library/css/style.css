@@ -2234,17 +2234,42 @@ you can add resource intensive styles.
     margin-left: 30px;
   }
 
+  /* line 77, ../scss/breakpoints/_768up.scss */
+  .home #main-nav {
+    position: relative;
+    background: none;
+    width: 100%;
+    margin: 1em 0 1em -10em;
+  }
+  /* line 83, ../scss/breakpoints/_768up.scss */
+  .home #main-nav li {
+    display: inline-block;
+  }
+  /* line 86, ../scss/breakpoints/_768up.scss */
+  .home #main-nav li a {
+    height: 250px;
+    width: 180px;
+    background-size: 180px 180px;
+    padding-top: 180px;
+    margin: 0 !important;
+  }
+
+  /* line 96, ../scss/breakpoints/_768up.scss */
+  .home header[role=banner] #logo {
+    margin: 6em 0 2em -6em;
+  }
+
   /*********************
   PARALLAX PANEL STYLES
   *********************/
-  /* line 81, ../scss/breakpoints/_768up.scss */
+  /* line 101, ../scss/breakpoints/_768up.scss */
   html, body, #container {
     width: 100%;
     height: 100%;
   }
 
   /* main panels */
-  /* line 87, ../scss/breakpoints/_768up.scss */
+  /* line 107, ../scss/breakpoints/_768up.scss */
   .page-panel {
     background-attachment: fixed;
     width: 100%;
@@ -2253,7 +2278,7 @@ you can add resource intensive styles.
     background: transparent;
     padding: 0;
   }
-  /* line 95, ../scss/breakpoints/_768up.scss */
+  /* line 115, ../scss/breakpoints/_768up.scss */
   .page-panel:after {
     display: block;
     content: '';
@@ -2270,64 +2295,64 @@ you can add resource intensive styles.
     box-shadow: 0 2px 2px rgba(1, 2, 2, 0.35);
   }
 
-  /* line 109, ../scss/breakpoints/_768up.scss */
+  /* line 129, ../scss/breakpoints/_768up.scss */
   .inner-content {
     height: 100%;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 114, ../scss/breakpoints/_768up.scss */
+  /* line 134, ../scss/breakpoints/_768up.scss */
   .inner-content .entry-content {
     padding-top: 4em;
   }
 
   /* skip text */
-  /* line 120, ../scss/breakpoints/_768up.scss */
+  /* line 140, ../scss/breakpoints/_768up.scss */
   .skip-text {
     display: none;
   }
 
   /* down buttons */
-  /* line 126, ../scss/breakpoints/_768up.scss */
+  /* line 146, ../scss/breakpoints/_768up.scss */
   .direction-button {
     top: auto;
     bottom: 20px;
   }
 
   /* individual page panels */
-  /* line 135, ../scss/breakpoints/_768up.scss */
+  /* line 155, ../scss/breakpoints/_768up.scss */
   #home .entry-content {
     position: absolute;
     bottom: 5%;
-    right: 20%;
+    text-align: center;
+    width: 100%;
   }
-  /* line 139, ../scss/breakpoints/_768up.scss */
-  #home .entry-content span {
-    display: block;
-    text-indent: 6em;
+  /* line 162, ../scss/breakpoints/_768up.scss */
+  #home h1 {
+    margin: 0 auto;
   }
-  /* line 145, ../scss/breakpoints/_768up.scss */
+  /* line 164, ../scss/breakpoints/_768up.scss */
   #home blockquote {
     font-size: 2em;
     margin-top: 25%;
   }
-  /* line 150, ../scss/breakpoints/_768up.scss */
+  /* line 169, ../scss/breakpoints/_768up.scss */
   #home .direction-button {
     display: block;
   }
 
-  /* line 158, ../scss/breakpoints/_768up.scss */
+  /* line 177, ../scss/breakpoints/_768up.scss */
   #books .pre-order {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 161, ../scss/breakpoints/_768up.scss */
+  /* line 180, ../scss/breakpoints/_768up.scss */
   #books .pre-order div {
     padding: 10px 20px;
   }
-  /* line 164, ../scss/breakpoints/_768up.scss */
+  /* line 183, ../scss/breakpoints/_768up.scss */
   #books .synopsis {
     width: 66.10169%;
     float: left;
@@ -2336,13 +2361,13 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 172, ../scss/breakpoints/_768up.scss */
+  /* line 191, ../scss/breakpoints/_768up.scss */
   #about-the-author .author-info {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 176, ../scss/breakpoints/_768up.scss */
+  /* line 195, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact {
     width: 40.67797%;
     float: left;
@@ -2351,30 +2376,30 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 182, ../scss/breakpoints/_768up.scss */
+  /* line 201, ../scss/breakpoints/_768up.scss */
   #news {
     padding-top: 0;
     padding-bottom: 0;
     height: calc(100% + 30px);
   }
-  /* line 187, ../scss/breakpoints/_768up.scss */
+  /* line 206, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 190, ../scss/breakpoints/_768up.scss */
+  /* line 209, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(3n) {
     float: right;
     margin-right: 0;
   }
-  /* line 194, ../scss/breakpoints/_768up.scss */
+  /* line 213, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(4n) {
     margin-left: 0;
     clear: left;
   }
 
-  /* line 202, ../scss/breakpoints/_768up.scss */
+  /* line 221, ../scss/breakpoints/_768up.scss */
   #sword {
     display: block;
     position: fixed;
@@ -2385,7 +2410,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 214, ../scss/breakpoints/_768up.scss */
+  /* line 233, ../scss/breakpoints/_768up.scss */
   #main {
     width: 83.05085%;
     float: left;
@@ -2394,12 +2419,12 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 218, ../scss/breakpoints/_768up.scss */
+  /* line 237, ../scss/breakpoints/_768up.scss */
   #content {
     margin-top: 300px;
   }
 
-  /* line 222, ../scss/breakpoints/_768up.scss */
+  /* line 241, ../scss/breakpoints/_768up.scss */
   .hentry {
     margin-bottom: 1.5em;
   }

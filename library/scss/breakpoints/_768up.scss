@@ -74,6 +74,26 @@ NAVIGATION STYLES
     }
 }
 
+.home #main-nav {
+    position: relative;
+    background: none;
+    width: 100%;
+    margin: 1em 0 1em -10em;
+
+    li {
+        display: inline-block;
+
+        a {
+            height: 250px;
+            width: 180px;
+            background-size: 180px 180px;
+            padding-top: 180px;
+            margin: 0 !important;
+        }
+    }   
+}
+
+.home header[role=banner] #logo { margin: 6em 0 2em -6em; }
 
 /*********************
 PARALLAX PANEL STYLES
@@ -135,12 +155,11 @@ html, body, #container {
     .entry-content {
         position: absolute;
         bottom: 5%;
-        right: 20%;
-        span {
-            display: block;
-            text-indent: 6em;
-        }
+        text-align: center;
+        width: 100%;
     }
+
+    h1 {margin: 0 auto;}
     
     blockquote {
         font-size: 2em;
