@@ -819,7 +819,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   position: relative;
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
   text-decoration: none;
-  color: #604c40;
+  color: #704830;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   font-size: 1em;
   font-weight: 600;
@@ -866,15 +866,15 @@ and it will create a button dependant on those variables.
 */
 /* line 68, ../scss/modules/_buttons.scss */
 .button, .comment-reply-link, #submit {
-  background-color: #97b2b2;
+  background-color: #85c4c4;
 }
 /* line 72, ../scss/modules/_buttons.scss */
 .button:hover, .comment-reply-link:hover, #submit:hover, .button:focus, .comment-reply-link:focus, #submit:focus {
-  background-color: #8ba9a9;
+  background-color: #77bdbd;
 }
 /* line 77, ../scss/modules/_buttons.scss */
 .button:active, .comment-reply-link:active, #submit:active {
-  background-color: #88a7a7;
+  background-color: #74bcbc;
 }
 
 /******************************************************************
@@ -889,7 +889,7 @@ These boxes and containers are used in various places to hold content.
 /* line 11, ../scss/modules/_boxes.scss */
 .box, #about-the-author .author-info, .hentry {
   position: relative;
-  border: 1px solid #eff3f3;
+  border: 1px solid #ecf6f6;
   background: rgba(255, 255, 255, 0.5);
   padding: 3em;
   z-index: 1;
@@ -902,7 +902,7 @@ These boxes and containers are used in various places to hold content.
   z-index: -1;
   top: 1em;
   left: 1em;
-  border: 2px solid #eff3f3;
+  border: 2px solid #ecf6f6;
   background: rgba(255, 255, 255, 0.5);
   height: calc(100% - 2em - 2px);
   width: calc(100% - 2em - 2px);
@@ -952,7 +952,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #514036;
+  color: #5e3d28;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -1235,7 +1235,7 @@ body {
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #514036;
+  color: #5e3d28;
   background-color: #eaedf2;
   background: url("../images/snow.jpg") bottom center fixed;
   background-size: cover;
@@ -1299,14 +1299,14 @@ LINK STYLES
 *********************/
 /* line 83, ../scss/breakpoints/_base.scss */
 a, a:visited {
-  color: #4e0707;
+  color: #550000;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 /* line 87, ../scss/breakpoints/_base.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #240303;
+  color: #270000;
 }
 /* line 97, ../scss/breakpoints/_base.scss */
 a:link, a:visited:link {
@@ -1336,7 +1336,7 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
-  color: #293640;
+  color: #1f374a;
   font-family: "Uncial Antiqua", cursive;
 }
 
@@ -1344,12 +1344,12 @@ h1, .h1 {
 h2, .h2 {
   display: inline-block;
   margin: 1em auto .75em;
-  border-top: 2px solid #604c40;
-  border-bottom: 2px solid #604c40;
+  border-top: 2px solid #704830;
+  border-bottom: 2px solid #704830;
   padding: 5px 5px;
   font-size: .8em;
   line-height: 1.4em;
-  color: #604c40;
+  color: #704830;
   text-align: center;
   font-weight: bolder;
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -1444,7 +1444,7 @@ NAVIGATION STYLES
 #main-nav li a {
   display: inline-block;
   padding: .75em 1em;
-  color: #514036;
+  color: #5e3d28;
   text-decoration: none;
   font-weight: 700;
 }
@@ -1483,16 +1483,16 @@ PANEL STYLES
 /* line 260, ../scss/breakpoints/_base.scss */
 #books .pre-order {
   text-align: center;
-  color: #97b2b2;
+  color: #85c4c4;
 }
 /* line 264, ../scss/breakpoints/_base.scss */
 #books .pre-order h2 {
-  color: #d2dddd;
-  border-color: #d2dddd;
+  color: #cae5e5;
+  border-color: #cae5e5;
 }
 /* line 269, ../scss/breakpoints/_base.scss */
 #books .pre-order a {
-  color: #ede8e5;
+  color: #f2e7e0;
 }
 
 /* line 273, ../scss/breakpoints/_base.scss */
@@ -1522,7 +1522,7 @@ PANEL STYLES
 /* line 299, ../scss/breakpoints/_base.scss */
 #news h1 {
   text-align: center;
-  color: #d9cdc6;
+  color: #e3cbbc;
 }
 /* line 304, ../scss/breakpoints/_base.scss */
 #news .news-excerpt {
@@ -1537,7 +1537,7 @@ PANEL STYLES
 }
 /* line 313, ../scss/breakpoints/_base.scss */
 #news .news-excerpt h2 a {
-  color: #41342c;
+  color: #4c3121;
 }
 /* line 317, ../scss/breakpoints/_base.scss */
 #news .clearfix {
@@ -1618,9 +1618,9 @@ POSTS & CONTENT STYLES
 /* post meta */
 /* line 400, ../scss/breakpoints/_base.scss */
 .byline {
-  color: #97b2b2;
+  color: #85c4c4;
   margin: .25em;
-  border-color: #7a9c9c;
+  border-color: #62b4b4;
 }
 
 /* entry content */
@@ -1683,7 +1683,7 @@ POSTS & CONTENT STYLES
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
-  border-left: 3px solid #97b2b2;
+  border-left: 3px solid #85c4c4;
   font-style: italic;
   color: #9fa6b4;
 }
@@ -1791,22 +1791,22 @@ PAGE NAVI STYLES
   padding: 0.75em;
   min-width: 1em;
   display: block;
-  color: #97b2b2;
+  color: #85c4c4;
 }
 /* line 627, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #97b2b2;
+  background-color: #85c4c4;
   color: white;
 }
 /* line 633, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
-  color: #514036;
+  color: #5e3d28;
 }
 /* line 637, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: white;
-  color: #514036;
+  color: #5e3d28;
 }
 
 /* end .bones_page_navi */
@@ -1969,7 +1969,7 @@ COMMENT FORM STYLES
 }
 /* line 871, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
-  color: #514036;
+  color: #5e3d28;
 }
 
 /* line 876, ../scss/breakpoints/_base.scss */
@@ -2029,7 +2029,7 @@ SIDEBARS & ASIDES
   background-color: white;
   padding: 1.5em;
   text-align: center;
-  border: 1px solid #eff3f3;
+  border: 1px solid #ecf6f6;
   border-radius: 2px;
   margin-bottom: 1.5em;
 }
@@ -2040,7 +2040,7 @@ FOOTER STYLES
 /* line 958, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
-  border-top: 1px solid #eff3f3;
+  border-top: 1px solid #ecf6f6;
   background: rgba(255, 255, 255, 0.5);
   color: #323944;
   text-align: center;
@@ -2049,7 +2049,7 @@ FOOTER STYLES
 }
 /* line 968, ../scss/breakpoints/_base.scss */
 .footer nav ul {
-  border-bottom: 1px solid #97b2b2;
+  border-bottom: 1px solid #85c4c4;
 }
 
 /*********************
@@ -2193,18 +2193,19 @@ you can add resource intensive styles.
     width: 322px;
     height: 780.16px;
     box-shadow: none;
+    border-bottom: none;
   }
-  /* line 41, ../scss/breakpoints/_768up.scss */
+  /* line 42, ../scss/breakpoints/_768up.scss */
   #main-nav ul {
     border: 0;
     padding: 70px 0 0 65px;
   }
-  /* line 45, ../scss/breakpoints/_768up.scss */
+  /* line 46, ../scss/breakpoints/_768up.scss */
   #main-nav ul li {
     display: block;
     font-size: 1.15em;
   }
-  /* line 49, ../scss/breakpoints/_768up.scss */
+  /* line 50, ../scss/breakpoints/_768up.scss */
   #main-nav ul li a {
     display: block;
     text-align: center;
@@ -2214,38 +2215,38 @@ you can add resource intensive styles.
     background-size: 110px 110px;
     padding-top: 100px;
   }
-  /* line 59, ../scss/breakpoints/_768up.scss */
+  /* line 60, ../scss/breakpoints/_768up.scss */
   #main-nav ul li#home-link a {
     background-image: url("../images/icon-fire.png");
   }
-  /* line 60, ../scss/breakpoints/_768up.scss */
+  /* line 61, ../scss/breakpoints/_768up.scss */
   #main-nav ul li#books-link a {
     background-image: url("../images/icon-eye.png");
     margin-left: 10px;
   }
-  /* line 64, ../scss/breakpoints/_768up.scss */
+  /* line 65, ../scss/breakpoints/_768up.scss */
   #main-nav ul li#about-link a {
     background-image: url("../images/icon-crow.png");
     margin-left: 20px;
   }
-  /* line 68, ../scss/breakpoints/_768up.scss */
+  /* line 69, ../scss/breakpoints/_768up.scss */
   #main-nav ul li#news-link a {
     background-image: url("../images/icon-moon.png");
     margin-left: 30px;
   }
 
-  /* line 77, ../scss/breakpoints/_768up.scss */
+  /* line 78, ../scss/breakpoints/_768up.scss */
   .home #main-nav {
     position: relative;
     background: none;
     width: 100%;
     margin: 1em 0 1em -10em;
   }
-  /* line 83, ../scss/breakpoints/_768up.scss */
+  /* line 84, ../scss/breakpoints/_768up.scss */
   .home #main-nav li {
     display: inline-block;
   }
-  /* line 86, ../scss/breakpoints/_768up.scss */
+  /* line 87, ../scss/breakpoints/_768up.scss */
   .home #main-nav li a {
     height: 250px;
     width: 180px;
@@ -2254,7 +2255,7 @@ you can add resource intensive styles.
     margin: 0 !important;
   }
 
-  /* line 96, ../scss/breakpoints/_768up.scss */
+  /* line 97, ../scss/breakpoints/_768up.scss */
   .home header[role=banner] #logo {
     margin: 6em 0 2em -6em;
   }
@@ -2262,14 +2263,14 @@ you can add resource intensive styles.
   /*********************
   PARALLAX PANEL STYLES
   *********************/
-  /* line 101, ../scss/breakpoints/_768up.scss */
+  /* line 102, ../scss/breakpoints/_768up.scss */
   html, body, #container {
     width: 100%;
     height: 100%;
   }
 
   /* main panels */
-  /* line 107, ../scss/breakpoints/_768up.scss */
+  /* line 108, ../scss/breakpoints/_768up.scss */
   .page-panel {
     background-attachment: fixed;
     width: 100%;
@@ -2278,7 +2279,7 @@ you can add resource intensive styles.
     background: transparent;
     padding: 0;
   }
-  /* line 115, ../scss/breakpoints/_768up.scss */
+  /* line 116, ../scss/breakpoints/_768up.scss */
   .page-panel:after {
     display: block;
     content: '';
@@ -2295,64 +2296,64 @@ you can add resource intensive styles.
     box-shadow: 0 2px 2px rgba(1, 2, 2, 0.35);
   }
 
-  /* line 129, ../scss/breakpoints/_768up.scss */
+  /* line 130, ../scss/breakpoints/_768up.scss */
   .inner-content {
     height: 100%;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 134, ../scss/breakpoints/_768up.scss */
+  /* line 135, ../scss/breakpoints/_768up.scss */
   .inner-content .entry-content {
     padding-top: 4em;
   }
 
   /* skip text */
-  /* line 140, ../scss/breakpoints/_768up.scss */
+  /* line 141, ../scss/breakpoints/_768up.scss */
   .skip-text {
     display: none;
   }
 
   /* down buttons */
-  /* line 146, ../scss/breakpoints/_768up.scss */
+  /* line 147, ../scss/breakpoints/_768up.scss */
   .direction-button {
     top: auto;
     bottom: 20px;
   }
 
   /* individual page panels */
-  /* line 155, ../scss/breakpoints/_768up.scss */
+  /* line 156, ../scss/breakpoints/_768up.scss */
   #home .entry-content {
     position: absolute;
     bottom: 5%;
     text-align: center;
     width: 100%;
   }
-  /* line 162, ../scss/breakpoints/_768up.scss */
+  /* line 163, ../scss/breakpoints/_768up.scss */
   #home h1 {
     margin: 0 auto;
   }
-  /* line 164, ../scss/breakpoints/_768up.scss */
+  /* line 165, ../scss/breakpoints/_768up.scss */
   #home blockquote {
     font-size: 2em;
     margin-top: 25%;
   }
-  /* line 169, ../scss/breakpoints/_768up.scss */
+  /* line 170, ../scss/breakpoints/_768up.scss */
   #home .direction-button {
     display: block;
   }
 
-  /* line 177, ../scss/breakpoints/_768up.scss */
+  /* line 178, ../scss/breakpoints/_768up.scss */
   #books .pre-order {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 180, ../scss/breakpoints/_768up.scss */
+  /* line 181, ../scss/breakpoints/_768up.scss */
   #books .pre-order div {
     padding: 10px 20px;
   }
-  /* line 183, ../scss/breakpoints/_768up.scss */
+  /* line 184, ../scss/breakpoints/_768up.scss */
   #books .synopsis {
     width: 66.10169%;
     float: left;
@@ -2361,13 +2362,13 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 191, ../scss/breakpoints/_768up.scss */
+  /* line 192, ../scss/breakpoints/_768up.scss */
   #about-the-author .author-info {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 195, ../scss/breakpoints/_768up.scss */
+  /* line 196, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact {
     width: 40.67797%;
     float: left;
@@ -2376,30 +2377,30 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 201, ../scss/breakpoints/_768up.scss */
+  /* line 202, ../scss/breakpoints/_768up.scss */
   #news {
     padding-top: 0;
     padding-bottom: 0;
     height: calc(100% + 30px);
   }
-  /* line 206, ../scss/breakpoints/_768up.scss */
+  /* line 207, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 209, ../scss/breakpoints/_768up.scss */
+  /* line 210, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(3n) {
     float: right;
     margin-right: 0;
   }
-  /* line 213, ../scss/breakpoints/_768up.scss */
+  /* line 214, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(4n) {
     margin-left: 0;
     clear: left;
   }
 
-  /* line 221, ../scss/breakpoints/_768up.scss */
+  /* line 222, ../scss/breakpoints/_768up.scss */
   #sword {
     display: block;
     position: fixed;
@@ -2410,7 +2411,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 233, ../scss/breakpoints/_768up.scss */
+  /* line 234, ../scss/breakpoints/_768up.scss */
   #main {
     width: 83.05085%;
     float: left;
@@ -2419,12 +2420,12 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 237, ../scss/breakpoints/_768up.scss */
+  /* line 238, ../scss/breakpoints/_768up.scss */
   #content {
     margin-top: 300px;
   }
 
-  /* line 241, ../scss/breakpoints/_768up.scss */
+  /* line 242, ../scss/breakpoints/_768up.scss */
   .hentry {
     margin-bottom: 1.5em;
   }
