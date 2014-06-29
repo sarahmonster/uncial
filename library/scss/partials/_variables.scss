@@ -29,11 +29,11 @@ $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
 $meta-gray:         #9fa6b4;
 
-$teal:              saturate(#293640, 20%);
-$brown:             saturate(#604c40, 20%);
-$blue:              saturate(#97b2b2, 20%);
-$red:               saturate(#4e0707, 20%);
-$garnet:            saturate(#3f1e25, 20%);
+$teal:              #293640;
+$brown:             #604c40;
+$blue:              #97b2b2;
+$red:               #4e0707;
+$garnet:            #3f1e25;
 
 $text-color:        darken($brown, 5%);
 $link-color:        $red;

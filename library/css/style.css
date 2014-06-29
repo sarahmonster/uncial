@@ -819,7 +819,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   position: relative;
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
   text-decoration: none;
-  color: #704830;
+  color: #604c40;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   font-size: 1em;
   font-weight: 600;
@@ -866,15 +866,15 @@ and it will create a button dependant on those variables.
 */
 /* line 68, ../scss/modules/_buttons.scss */
 .button, .comment-reply-link, #submit {
-  background-color: #85c4c4;
+  background-color: #97b2b2;
 }
 /* line 72, ../scss/modules/_buttons.scss */
 .button:hover, .comment-reply-link:hover, #submit:hover, .button:focus, .comment-reply-link:focus, #submit:focus {
-  background-color: #77bdbd;
+  background-color: #8ba9a9;
 }
 /* line 77, ../scss/modules/_buttons.scss */
 .button:active, .comment-reply-link:active, #submit:active {
-  background-color: #74bcbc;
+  background-color: #88a7a7;
 }
 
 /******************************************************************
@@ -889,7 +889,7 @@ These boxes and containers are used in various places to hold content.
 /* line 11, ../scss/modules/_boxes.scss */
 .box, #about-the-author .author-info, .hentry {
   position: relative;
-  border: 1px solid #ecf6f6;
+  border: 1px solid #eff3f3;
   background: rgba(255, 255, 255, 0.5);
   padding: 3em;
   z-index: 1;
@@ -902,7 +902,7 @@ These boxes and containers are used in various places to hold content.
   z-index: -1;
   top: 1em;
   left: 1em;
-  border: 2px solid #ecf6f6;
+  border: 2px solid #eff3f3;
   background: rgba(255, 255, 255, 0.5);
   height: calc(100% - 2em - 2px);
   width: calc(100% - 2em - 2px);
@@ -952,7 +952,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5e3d28;
+  color: #514036;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -1235,7 +1235,7 @@ body {
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5e3d28;
+  color: #514036;
   background-color: #eaedf2;
   background: url("../images/snow.jpg") bottom center fixed;
   background-size: cover;
@@ -1299,14 +1299,14 @@ LINK STYLES
 *********************/
 /* line 83, ../scss/breakpoints/_base.scss */
 a, a:visited {
-  color: #550000;
+  color: #4e0707;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 /* line 87, ../scss/breakpoints/_base.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #270000;
+  color: #240303;
 }
 /* line 97, ../scss/breakpoints/_base.scss */
 a:link, a:visited:link {
@@ -1336,7 +1336,7 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
-  color: #1f374a;
+  color: #293640;
   font-family: "Uncial Antiqua", cursive;
 }
 
@@ -1344,12 +1344,12 @@ h1, .h1 {
 h2, .h2 {
   display: inline-block;
   margin: 1em auto .75em;
-  border-top: 2px solid #704830;
-  border-bottom: 2px solid #704830;
+  border-top: 2px solid #604c40;
+  border-bottom: 2px solid #604c40;
   padding: 5px 5px;
   font-size: .8em;
   line-height: 1.4em;
-  color: #704830;
+  color: #604c40;
   text-align: center;
   font-weight: bolder;
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -1444,7 +1444,7 @@ NAVIGATION STYLES
 #main-nav li a {
   display: inline-block;
   padding: .75em 1em;
-  color: #5e3d28;
+  color: #514036;
   text-decoration: none;
   font-weight: 700;
 }
@@ -1483,16 +1483,16 @@ PANEL STYLES
 /* line 260, ../scss/breakpoints/_base.scss */
 #books .pre-order {
   text-align: center;
-  color: #85c4c4;
+  color: #97b2b2;
 }
 /* line 264, ../scss/breakpoints/_base.scss */
 #books .pre-order h2 {
-  color: #cae5e5;
-  border-color: #cae5e5;
+  color: #d2dddd;
+  border-color: #d2dddd;
 }
 /* line 269, ../scss/breakpoints/_base.scss */
 #books .pre-order a {
-  color: #f2e7e0;
+  color: #ede8e5;
 }
 
 /* line 273, ../scss/breakpoints/_base.scss */
@@ -1522,7 +1522,7 @@ PANEL STYLES
 /* line 299, ../scss/breakpoints/_base.scss */
 #news h1 {
   text-align: center;
-  color: #e3cbbc;
+  color: #d9cdc6;
 }
 /* line 304, ../scss/breakpoints/_base.scss */
 #news .news-excerpt {
@@ -1537,7 +1537,7 @@ PANEL STYLES
 }
 /* line 313, ../scss/breakpoints/_base.scss */
 #news .news-excerpt h2 a {
-  color: #4c3121;
+  color: #41342c;
 }
 /* line 317, ../scss/breakpoints/_base.scss */
 #news .clearfix {
@@ -1618,9 +1618,9 @@ POSTS & CONTENT STYLES
 /* post meta */
 /* line 400, ../scss/breakpoints/_base.scss */
 .byline {
-  color: #85c4c4;
+  color: #97b2b2;
   margin: .25em;
-  border-color: #62b4b4;
+  border-color: #7a9c9c;
 }
 
 /* entry content */
@@ -1684,7 +1684,7 @@ POSTS & CONTENT STYLES
   margin: .5em 0;
   padding: 0;
   font-style: italic;
-  color: #2d526f;
+  color: #3d505f;
   font-size: 1.2em;
 }
 /* line 493, ../scss/breakpoints/_base.scss */
@@ -1791,22 +1791,22 @@ PAGE NAVI STYLES
   padding: 0.75em;
   min-width: 1em;
   display: block;
-  color: #85c4c4;
+  color: #97b2b2;
 }
 /* line 627, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #85c4c4;
+  background-color: #97b2b2;
   color: white;
 }
 /* line 633, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
-  color: #5e3d28;
+  color: #514036;
 }
 /* line 637, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: white;
-  color: #5e3d28;
+  color: #514036;
 }
 
 /* end .bones_page_navi */
@@ -1969,7 +1969,7 @@ COMMENT FORM STYLES
 }
 /* line 871, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
-  color: #5e3d28;
+  color: #514036;
 }
 
 /* line 876, ../scss/breakpoints/_base.scss */
@@ -2029,7 +2029,7 @@ SIDEBARS & ASIDES
   background-color: white;
   padding: 1.5em;
   text-align: center;
-  border: 1px solid #ecf6f6;
+  border: 1px solid #eff3f3;
   border-radius: 2px;
   margin-bottom: 1.5em;
 }
@@ -2040,7 +2040,7 @@ FOOTER STYLES
 /* line 958, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
-  border-top: 1px solid #ecf6f6;
+  border-top: 1px solid #eff3f3;
   background: rgba(255, 255, 255, 0.5);
   color: #323944;
   text-align: center;
@@ -2049,7 +2049,7 @@ FOOTER STYLES
 }
 /* line 968, ../scss/breakpoints/_base.scss */
 .footer nav ul {
-  border-bottom: 1px solid #85c4c4;
+  border-bottom: 1px solid #97b2b2;
 }
 
 /*********************
