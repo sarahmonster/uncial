@@ -309,8 +309,10 @@ PANEL STYLES
     	h2 {
     		display: block;
     		text-align: center;
+    		border-color: lighten($brown, 40%);
 
-    		a {color: darken($brown, 10%);}
+    		&:before, &:after {color: lighten($brown, 40%);}
+    		a {color: lighten($brown, 60%);}
     	}
     }
 
