@@ -703,6 +703,471 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+@font-face {
+  font-family: "Socialicious";
+  src: url("../font/socialicious.eot");
+  src: url("../font/socialicious.eot?#iefix") format("embedded-opentype"), url("../font/socialicious.ttf") format("truetype"), url("../font/socialicious.svg#socialicious") format("svg"), url("../font/socialicious.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../scss/socialicious/_fonts.scss */
+[data-icon]:before {
+  font-family: "Socialicious";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 22, ../scss/socialicious/_fonts.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "Socialicious";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 32, ../scss/socialicious/_fonts.scss */
+.icon-bebo:before {
+  content: "a";
+}
+
+/* line 36, ../scss/socialicious/_fonts.scss */
+.icon-bebo-sign:before {
+  content: "b";
+}
+
+/* line 40, ../scss/socialicious/_fonts.scss */
+.icon-bread:before {
+  content: "c";
+}
+
+/* line 44, ../scss/socialicious/_fonts.scss */
+.icon-bread-sign:before {
+  content: "d";
+}
+
+/* line 48, ../scss/socialicious/_fonts.scss */
+.icon-dribbble:before {
+  content: "e";
+}
+
+/* line 52, ../scss/socialicious/_fonts.scss */
+.icon-dribbble-sign:before {
+  content: "f";
+}
+
+/* line 56, ../scss/socialicious/_fonts.scss */
+.icon-facebook:before {
+  content: "g";
+}
+
+/* line 60, ../scss/socialicious/_fonts.scss */
+.icon-facebook-sign:before {
+  content: "h";
+}
+
+/* line 64, ../scss/socialicious/_fonts.scss */
+.icon-flickr:before {
+  content: "i";
+}
+
+/* line 68, ../scss/socialicious/_fonts.scss */
+.icon-flickr-sign:before {
+  content: "j";
+}
+
+/* line 72, ../scss/socialicious/_fonts.scss */
+.icon-foursquare:before {
+  content: "k";
+}
+
+/* line 76, ../scss/socialicious/_fonts.scss */
+.icon-foursquare-sign:before {
+  content: "l";
+}
+
+/* line 80, ../scss/socialicious/_fonts.scss */
+.icon-linkedin-sign:before {
+  content: "p";
+}
+
+/* line 84, ../scss/socialicious/_fonts.scss */
+.icon-linkedin:before {
+  content: "q";
+}
+
+/* line 88, ../scss/socialicious/_fonts.scss */
+.icon-lastfm-sign:before {
+  content: "r";
+}
+
+/* line 92, ../scss/socialicious/_fonts.scss */
+.icon-lastfm:before {
+  content: "s";
+}
+
+/* line 96, ../scss/socialicious/_fonts.scss */
+.icon-klout-sign:before {
+  content: "t";
+}
+
+/* line 100, ../scss/socialicious/_fonts.scss */
+.icon-klout:before {
+  content: "u";
+}
+
+/* line 104, ../scss/socialicious/_fonts.scss */
+.icon-instagram-sign:before {
+  content: "v";
+}
+
+/* line 108, ../scss/socialicious/_fonts.scss */
+.icon-instagram:before {
+  content: "w";
+}
+
+/* line 112, ../scss/socialicious/_fonts.scss */
+.icon-spotify:before {
+  content: "A";
+}
+
+/* line 116, ../scss/socialicious/_fonts.scss */
+.icon-spotify-sign:before {
+  content: "B";
+}
+
+/* line 120, ../scss/socialicious/_fonts.scss */
+.icon-tumblr:before {
+  content: "F";
+}
+
+/* line 124, ../scss/socialicious/_fonts.scss */
+.icon-tumblr-sign:before {
+  content: "G";
+}
+
+/* line 128, ../scss/socialicious/_fonts.scss */
+.icon-twitter:before {
+  content: "H";
+}
+
+/* line 132, ../scss/socialicious/_fonts.scss */
+.icon-twitter-sign:before {
+  content: "I";
+}
+
+/* line 136, ../scss/socialicious/_fonts.scss */
+.icon-vevo:before {
+  content: "J";
+}
+
+/* line 140, ../scss/socialicious/_fonts.scss */
+.icon-vevo-sign:before {
+  content: "K";
+}
+
+/* line 144, ../scss/socialicious/_fonts.scss */
+.icon-vimeo:before {
+  content: "L";
+}
+
+/* line 148, ../scss/socialicious/_fonts.scss */
+.icon-vimeo-sign:before {
+  content: "M";
+}
+
+/* line 152, ../scss/socialicious/_fonts.scss */
+.icon-wordpress-sign:before {
+  content: "N";
+}
+
+/* line 156, ../scss/socialicious/_fonts.scss */
+.icon-wordpress:before {
+  content: "O";
+}
+
+/* line 160, ../scss/socialicious/_fonts.scss */
+.icon-yelp:before {
+  content: "C";
+}
+
+/* line 164, ../scss/socialicious/_fonts.scss */
+.icon-yelp-sign:before {
+  content: "D";
+}
+
+/* line 168, ../scss/socialicious/_fonts.scss */
+.icon-youtube:before {
+  content: "E";
+}
+
+/* line 172, ../scss/socialicious/_fonts.scss */
+.icon-youtube-sign:before {
+  content: "P";
+}
+
+/* line 176, ../scss/socialicious/_fonts.scss */
+.icon-github:before {
+  content: "m";
+}
+
+/* line 180, ../scss/socialicious/_fonts.scss */
+.icon-github-sign:before {
+  content: "z";
+}
+
+/* line 184, ../scss/socialicious/_fonts.scss */
+.icon-pinterest:before {
+  content: "n";
+}
+
+/* line 188, ../scss/socialicious/_fonts.scss */
+.icon-pinterest-sign:before {
+  content: "o";
+}
+
+/* line 192, ../scss/socialicious/_fonts.scss */
+.icon-googleplus:before {
+  content: "x";
+}
+
+/* line 196, ../scss/socialicious/_fonts.scss */
+.icon-googleplus-sign:before {
+  content: "y";
+}
+
+/* line 200, ../scss/socialicious/_fonts.scss */
+.icon-quora:before {
+  content: "Q";
+}
+
+/* line 204, ../scss/socialicious/_fonts.scss */
+.icon-quora-sign:before {
+  content: "R";
+}
+
+/* line 208, ../scss/socialicious/_fonts.scss */
+.icon-reddit:before {
+  content: "S";
+}
+
+/* line 212, ../scss/socialicious/_fonts.scss */
+.icon-reddit-sign:before {
+  content: "T";
+}
+
+/* line 216, ../scss/socialicious/_fonts.scss */
+.icon-soundcloud:before {
+  content: "U";
+}
+
+/* line 220, ../scss/socialicious/_fonts.scss */
+.icon-soundcloud-sign:before {
+  content: "V";
+}
+
+/* line 224, ../scss/socialicious/_fonts.scss */
+.icon-yahoo:before {
+  content: "W";
+}
+
+/* line 228, ../scss/socialicious/_fonts.scss */
+.icon-yahoo-sign:before {
+  content: "X";
+}
+
+/* line 232, ../scss/socialicious/_fonts.scss */
+.icon-behance:before {
+  content: "0";
+}
+
+/* line 236, ../scss/socialicious/_fonts.scss */
+.icon-behance-sign:before {
+  content: "1";
+}
+
+/* line 240, ../scss/socialicious/_fonts.scss */
+.icon-disqus:before {
+  content: "2";
+}
+
+/* line 244, ../scss/socialicious/_fonts.scss */
+.icon-disqus-sign:before {
+  content: "3";
+}
+
+/* line 248, ../scss/socialicious/_fonts.scss */
+.icon-goodreads:before {
+  content: "Y";
+}
+
+/* line 252, ../scss/socialicious/_fonts.scss */
+.icon-goodreads-sign:before {
+  content: "Z";
+}
+
+/* line 256, ../scss/socialicious/_fonts.scss */
+.icon-techendo:before {
+  content: "4";
+}
+
+/* line 260, ../scss/socialicious/_fonts.scss */
+.icon-techendo-sign:before {
+  content: "5";
+}
+
+/* Social Identities */
+/* line 8, ../scss/socialicious/socialicious.scss */
+i.icon-bebo, i.icon-bebo-sign {
+  color: #ee1010;
+}
+
+/* line 11, ../scss/socialicious/socialicious.scss */
+i.icon-behance-sign, i.icon-behance {
+  color: #005cff;
+}
+
+/* line 14, ../scss/socialicious/socialicious.scss */
+i.icon-bread-sign, i.icon-bread {
+  color: #00a4e4;
+}
+
+/* line 17, ../scss/socialicious/socialicious.scss */
+i.icon-disqus-sign, i.icon-disqus {
+  color: #2e9fff;
+}
+
+/* line 20, ../scss/socialicious/socialicious.scss */
+i.icon-dribbble-sign, i.icon-dribbble {
+  color: #ea4c89;
+}
+
+/* line 23, ../scss/socialicious/socialicious.scss */
+i.icon-facebook-sign, i.icon-facebook {
+  color: #3b5998;
+}
+
+/* line 26, ../scss/socialicious/socialicious.scss */
+i.icon-flickr-sign, i.icon-flickr {
+  color: #ed1e83;
+}
+
+/* line 29, ../scss/socialicious/socialicious.scss */
+i.icon-foursquare, i.icon-foursquare-sign {
+  color: #0cbadf;
+}
+
+/* line 32, ../scss/socialicious/socialicious.scss */
+i.icon-github-sign, i.icon-github {
+  color: black;
+}
+
+/* line 35, ../scss/socialicious/socialicious.scss */
+i.icon-goodreads-sign, i.icon-goodreads {
+  color: #5a471c;
+}
+
+/* line 38, ../scss/socialicious/socialicious.scss */
+i.icon-googleplus-sign, i.icon-googleplus {
+  color: #303030;
+}
+
+/* line 41, ../scss/socialicious/socialicious.scss */
+i.icon-instagram-sign, i.icon-instagram {
+  color: #3f729b;
+}
+
+/* line 44, ../scss/socialicious/socialicious.scss */
+i.icon-klout-sign, i.icon-klout {
+  color: #e24a25;
+}
+
+/* line 47, ../scss/socialicious/socialicious.scss */
+i.icon-lastfm-sign, i.icon-lastfm {
+  color: #a52f23;
+}
+
+/* line 50, ../scss/socialicious/socialicious.scss */
+i.icon-linkedin-sign, i.icon-linkedin {
+  color: #4875b4;
+}
+
+/* line 53, ../scss/socialicious/socialicious.scss */
+i.icon-pinterest-sign, i.icon-pinterest {
+  color: #cb2027;
+}
+
+/* line 56, ../scss/socialicious/socialicious.scss */
+i.icon-quora-sign, i.icon-quora {
+  color: #a72822;
+}
+
+/* line 59, ../scss/socialicious/socialicious.scss */
+i.icon-reddit-sign, i.icon-reddit {
+  color: #638cb1;
+}
+
+/* line 62, ../scss/socialicious/socialicious.scss */
+i.icon-soundcloud-sign, i.icon-soundcloud {
+  color: #ef3b24;
+}
+
+/* line 65, ../scss/socialicious/socialicious.scss */
+i.icon-spotify-sign, i.icon-spotify {
+  color: #75c044;
+}
+
+/* line 68, ../scss/socialicious/socialicious.scss */
+i.icon-techendo-sign, i.icon-techendo {
+  color: #32363c;
+}
+
+/* line 71, ../scss/socialicious/socialicious.scss */
+i.icon-tumblr-sign, i.icon-tumblr {
+  color: #45556b;
+}
+
+/* line 74, ../scss/socialicious/socialicious.scss */
+i.icon-twitter-sign, i.icon-twitter {
+  color: #33ccff;
+}
+
+/* line 77, ../scss/socialicious/socialicious.scss */
+i.icon-vevo, i.icon-vevo-sign {
+  color: #dc2726;
+}
+
+/* line 80, ../scss/socialicious/socialicious.scss */
+i.icon-vimeo, i.icon-vimeo-sign {
+  color: #1fb7ea;
+}
+
+/* line 83, ../scss/socialicious/socialicious.scss */
+i.icon-wordpress, i.icon-wordpress-sign {
+  color: #464342;
+}
+
+/* line 86, ../scss/socialicious/socialicious.scss */
+i.icon-yahoo-sign, i.icon-yahoo {
+  color: #8b2c8e;
+}
+
+/* line 89, ../scss/socialicious/socialicious.scss */
+i.icon-yelp-sign, i.icon-yelp {
+  color: #ca3c27;
+}
+
+/* line 92, ../scss/socialicious/socialicious.scss */
+i.icon-youtube-sign, i.icon-youtube {
+  color: #eb2629;
+}
+
 /******************************************************************
 Site Name:
 Author:
