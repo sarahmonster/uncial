@@ -32,10 +32,7 @@ NAVIGATION STYLES
     position: absolute;
     top: 20px;
     left: 0;
-    background: url('../images/flag.png') no-repeat;
-    background-size: cover;
-    width: 322px;
-    height: 780.16px;
+    background: none;
     box-shadow: none;
     border-bottom: none;
 
@@ -58,19 +55,9 @@ NAVIGATION STYLES
             }
 
             &#home-link a {background-image: url('../images/icon-fire.png');}
-            &#books-link a {
-                background-image: url('../images/icon-eye.png');
-                margin-left: 10px;
-            }
-            &#about-link a {
-                background-image: url('../images/icon-crow.png');
-                margin-left: 20px;
-            }
-            &#news-link a {
-                background-image: url('../images/icon-moon.png');
-                margin-left: 30px;
-            }
-
+            &#books-link a {background-image: url('../images/icon-eye.png');}
+            &#about-link a {background-image: url('../images/icon-crow.png');}
+            &#news-link a {background-image: url('../images/icon-moon.png');}
         }
     }
 }
