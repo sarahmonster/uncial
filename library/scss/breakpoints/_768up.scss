@@ -7,9 +7,9 @@ header[role=banner] {
     width: 100%;
 
     #logo {
-        margin: 2em auto;
 
         img {
+            margin: 2em auto 1em;
             width: 616px;
             height: 159px;
         }
@@ -17,8 +17,8 @@ header[role=banner] {
         h2 {
             display: block;
             position: absolute;
-            bottom: -10px;
-            left: 115px;
+            bottom: 15px;
+            left: 65px;
         }
     }
 }
@@ -66,7 +66,8 @@ NAVIGATION STYLES
     position: relative;
     background: none;
     width: 100%;
-    margin: 1em 0 1em -10em;
+    padding-right: 6em;
+
 
     li {
         display: inline-block;
@@ -81,7 +82,7 @@ NAVIGATION STYLES
     }   
 }
 
-.home header[role=banner] #logo { margin: 6em 0 2em -6em; }
+.home header[role=banner] #logo {padding-right: 6em;}
 
 /*********************
 PARALLAX PANEL STYLES
