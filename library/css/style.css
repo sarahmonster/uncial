@@ -1356,21 +1356,40 @@ These boxes and containers are used in various places to hold content.
   position: relative;
   border: 1px solid #eff3f3;
   background: rgba(255, 255, 255, 0.5);
-  padding: 3em;
   z-index: 1;
+  padding: 1em;
+  width: 104%;
+  left: -2%;
 }
-/* line 18, ../scss/modules/_boxes.scss */
+@media only screen and (min-width: 768px) {
+  /* line 11, ../scss/modules/_boxes.scss */
+  .box, #about-the-author .author-info, .hentry {
+    padding: 3em;
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 27, ../scss/modules/_boxes.scss */
 .box:before, #about-the-author .author-info:before, .hentry:before {
   content: "";
   position: absolute;
   display: block;
   z-index: -1;
-  top: 1em;
-  left: 1em;
+  top: .5em;
+  left: .5em;
   border: 2px solid #eff3f3;
   background: rgba(255, 255, 255, 0.5);
-  height: calc(100% - 2em - 2px);
-  width: calc(100% - 2em - 2px);
+  height: calc(100% - 1em - 2px);
+  width: calc(100% - 1em - 2px);
+}
+@media only screen and (min-width: 768px) {
+  /* line 27, ../scss/modules/_boxes.scss */
+  .box:before, #about-the-author .author-info:before, .hentry:before {
+    top: 1em;
+    left: 1em;
+    height: calc(100% - 2em - 2px);
+    width: calc(100% - 2em - 2px);
+  }
 }
 
 /******************************************************************
