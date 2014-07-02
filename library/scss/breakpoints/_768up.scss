@@ -68,7 +68,7 @@ NAVIGATION STYLES
     width: 100%;
     top: 0;
 
-    ul {padding: 1em 7em 0px 0px}
+    ul {padding: 7% 10em 10% 0;}
 
     li {
         display: inline-block;
@@ -84,6 +84,7 @@ NAVIGATION STYLES
 }
 
 .home header[role=banner] #logo {padding-right: 6em;}
+
 
 /*********************
 PARALLAX PANEL STYLES
@@ -149,7 +150,10 @@ html, body, #container {
         width: 100%;
     }
 
-    h1 {margin: 0 auto;}
+    h1 {
+        margin: 0 auto;
+        padding-right: 2em;
+    }
     
     blockquote {
         font-size: 2em;
