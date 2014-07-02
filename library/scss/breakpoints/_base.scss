@@ -136,7 +136,7 @@ h2, .h2 {
 	font-family: $serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 1px $black;
+	text-shadow: 1px 1px 1px $white;
 }
 h2:before, .h2:before, h2:after, .h2:after {
 	content: '\2666';
@@ -265,6 +265,7 @@ PANEL STYLES
 		h2 {
 			color: lighten($blue, 20%);
 			border-color: lighten($blue, 20%);
+			text-shadow: 1px 1px 1px $black;
 		}
 
 		a {color: lighten($brown, 60%);}
@@ -334,6 +335,7 @@ PANEL STYLES
     		display: block;
     		text-align: center;
     		border-color: lighten($brown, 30%);
+    		text-shadow: 1px 1px 1px $black;
 
     		&:before, &:after {color: lighten($brown, 30%);}
     		a {color: lighten($brown, 50%);}
