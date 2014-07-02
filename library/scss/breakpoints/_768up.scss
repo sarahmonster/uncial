@@ -66,17 +66,18 @@ NAVIGATION STYLES
     position: relative;
     background: none;
     width: 100%;
-    padding-right: 6em;
+    top: 0;
 
+    ul {padding: 1em 7em 0px 0px}
 
     li {
         display: inline-block;
 
         a {
-            height: 250px;
-            width: 180px;
-            background-size: 180px 180px;
-            padding-top: 180px;
+            height: 200px;
+            width: 130px;
+            background-size: 130px 130px;
+            padding-top: 130px;
             margin: 0 !important;
         }
     }   
