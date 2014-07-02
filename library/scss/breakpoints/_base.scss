@@ -116,8 +116,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: 1.5em;
+	line-height: 1em;
 	color: $teal;
 	font-family: $display;
 }
@@ -128,7 +128,7 @@ h2, .h2 {
 	border-top: 2px solid $brown;
 	border-bottom: 2px solid $brown;
 	padding: 5px 5px;
-	font-size: .9em;
+	font-size: .8em;
 	line-height: 1.4em;
 	color: $brown;
 	text-align: center;
@@ -142,7 +142,7 @@ h2:before, .h2:before, h2:after, .h2:after {
 	content: '\2666';
 	padding: 0 10px;
 	display: inline;
-	font-size: .8em
+	font-size: .8em;
 }
 
 h3, .h3 {
@@ -363,7 +363,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: 1.5em;
 
 			header {
-				padding: 1.5em;
+				padding: .5em 0;
 				text-align: center;
 			}
 
@@ -436,7 +436,7 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
-			padding: 1.5em 1.5em 0;
+			padding: 0;
 
 			p {
 				margin: 0 0 1.5em;
