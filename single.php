@@ -12,12 +12,14 @@
 
 			                <header class="article-header">
 
-			                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-
 			                  <h2 class="byline vcard">
-			                    <?php printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+			                    <time class="updated" datetime="<?php echo get_the_time('Y-m-j'); ?>" pubdate>
+			                    	<span><?php echo get_the_time('l,'); ?></span>
+			                    	<?php echo get_the_time('F jS, Y'); ?>
+			                    </time>
 			                  </h2>
 
+			                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>			                  
 			                </header> <?php // end article header ?>
 
 			                <section class="entry-content cf" itemprop="articleBody">

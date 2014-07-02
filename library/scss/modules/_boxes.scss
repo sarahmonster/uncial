@@ -13,10 +13,9 @@ These boxes and containers are used in various places to hold content.
   border: 1px solid $border-color;
   background: rgba(255,255,255,.5);  
   z-index: 1;
-  padding: 2em;
+  padding: 1.5em;
   width: 104%;
   left: -2%;
-
 
   @media only screen and (min-width: 768px) {
     padding: 3em;

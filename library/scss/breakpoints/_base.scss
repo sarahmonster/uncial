@@ -117,7 +117,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
 	font-size: 1.5em;
-	line-height: 1em;
+	line-height: 1.2em;
 	color: $teal;
 	font-family: $display;
 }
@@ -127,8 +127,8 @@ h2, .h2 {
 	margin: 1em auto .75em;
 	border-top: 2px solid $brown;
 	border-bottom: 2px solid $brown;
-	padding: 5px 5px;
-	font-size: .8em;
+	padding: 5px 5px 4px 5px;
+	font-size: .75em;
 	line-height: 1.4em;
 	color: $brown;
 	text-align: center;
@@ -363,7 +363,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: 1.5em;
 
 			header {
-				padding: .5em 0;
+				padding: .5em 0 1.5em;
 				text-align: center;
 			}
 
@@ -428,10 +428,11 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.byline {
 			color: $blue;
-			margin: .25em;
+			margin: 0.5em 0 1em;
 			border-color: darken($blue, 10%);
 
-			time {}
+			span {display: none;}
+
 		}
 
 		/* entry content */
