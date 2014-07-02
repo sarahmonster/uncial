@@ -5,6 +5,10 @@ HEADER STYLES
 header[role=banner] {
     text-align: center;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     #logo {
 
@@ -199,7 +203,7 @@ html, body, #container {
     
     .news-excerpt {
         @include span(6);
-    
+
         &:nth-of-type(2n) {
             @include omega;
         }
@@ -229,7 +233,7 @@ POSTS & CONTENT STYLES
     @include omega;
 }
 #content {
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
     .hentry {
