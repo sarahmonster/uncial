@@ -27,8 +27,8 @@
 			                </section> <?php // end article section ?>
 
 			              	<footer>
-				              	<?php next_post_link('%link', '<span>Next post</span> %title'); ?>
 								<?php previous_post_link('%link', '<span>Previous post</span> %title'); ?>
+								<?php next_post_link('%link', '<span>Next post</span> %title'); ?>
 							</footer>
 
 			              </article> <?php // end article ?>
