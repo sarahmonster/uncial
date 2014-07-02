@@ -1,5 +1,5 @@
 <?php
-$args = array( 'posts_per_page' => 6);
+$args = array( 'posts_per_page' => 4);
 $posts = get_posts( $args );
 $news_count = 1;
 foreach ( $posts as $post ) : setup_postdata( $post ); ?>
