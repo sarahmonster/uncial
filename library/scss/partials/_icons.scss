@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+$facebook: #3B5998;
+$goodreads: #5A471C;
+$twitter: #33CCFF;
+
 @font-face {
   font-family: "erin-lindsey";
   src:url("../fonts/erin-lindsey.eot");
@@ -40,12 +44,15 @@
 
 .icon-goodreads:before {
   content: "g";
+  color: $goodreads;
 }
 .icon-social-twitter:before {
   content: "t";
+  color: $twitter;
 }
 .icon-facebook:before {
   content: "f";
+  color: $facebook;
 }
 .icon-mail-read:before {
   content: "m";

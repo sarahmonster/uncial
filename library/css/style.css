@@ -710,7 +710,7 @@ probably best not to use it. I mean, were you going to anyway? */
   font-weight: normal;
   font-style: normal;
 }
-/* line 15, ../scss/partials/_icons.scss */
+/* line 19, ../scss/partials/_icons.scss */
 [data-icon]:before {
   font-family: "erin-lindsey" !important;
   content: attr(data-icon);
@@ -724,7 +724,7 @@ probably best not to use it. I mean, were you going to anyway? */
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, ../scss/partials/_icons.scss */
+/* line 32, ../scss/partials/_icons.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "erin-lindsey" !important;
@@ -738,22 +738,25 @@ probably best not to use it. I mean, were you going to anyway? */
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 41, ../scss/partials/_icons.scss */
+/* line 45, ../scss/partials/_icons.scss */
 .icon-goodreads:before {
   content: "g";
+  color: #5a471c;
 }
 
-/* line 44, ../scss/partials/_icons.scss */
+/* line 49, ../scss/partials/_icons.scss */
 .icon-social-twitter:before {
   content: "t";
+  color: #33ccff;
 }
 
-/* line 47, ../scss/partials/_icons.scss */
+/* line 53, ../scss/partials/_icons.scss */
 .icon-facebook:before {
   content: "f";
+  color: #3b5998;
 }
 
-/* line 50, ../scss/partials/_icons.scss */
+/* line 57, ../scss/partials/_icons.scss */
 .icon-mail-read:before {
   content: "m";
 }
