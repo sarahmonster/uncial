@@ -2772,7 +2772,7 @@ you can add resource intensive styles.
   }
   /* line 82, ../scss/breakpoints/_768up.scss */
   .home #main-nav ul {
-    padding: 7% 10em 10% 0;
+    padding: 10% 10em 10% 0;
   }
   /* line 84, ../scss/breakpoints/_768up.scss */
   .home #main-nav li {
