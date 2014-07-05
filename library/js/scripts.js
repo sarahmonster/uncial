@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
   if ($('body').hasClass('home')) {
 
     // Cache some variables
-    var links = $('.home nav').find('li a');
+    var links = $('.home nav li a');
     var slide = $('.page-panel');
     var mywindow = $(window);
     var htmlbody = $('html,body');
@@ -155,5 +155,28 @@ jQuery(document).ready(function($) {
     $("label[for='subscribe-field']").text("Subscribe via email");
 
   }
+
+
+  // Okay, now let's make that sword glint as you scroll
+  //$('#small-glint, #large-glint').addClass('fade-out');
+  
+  $('#home').waypoint(function() {
+      $('#large-glint').fadeTo(50, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
+      $('#small-glint').fadeTo(150, 1, 'easeInOutElastic').fadeTo(250, 0, 'easeInOutElastic');
+      $('#large-glint').fadeTo(300, 1, 'easeInOutElastic').fadeTo(400, 0, 'easeInOutElastic');
+  }, { offset: '-15%' });
+
+  $('#books').waypoint(function() {
+      $('#large-glint').fadeTo(100, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
+  });
+
+  $('#about-the-author').waypoint(function() {
+      $('#small-glint').fadeTo(100, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
+      $('#large-glint').fadeTo(250, 1, 'easeInOutElastic').fadeTo(350, 0, 'easeInOutElastic');
+  }, { offset: '15%' });
+
+  $('#news').waypoint(function() {
+      $('#large-glint').fadeTo(100, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
+  }, { offset: '15%' });
 
 }); /* end of as page load scripts */

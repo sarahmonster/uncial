@@ -261,6 +261,13 @@ html, body, #container {
     #large-glint {
         margin-left: 10px;
     }
+
+    #small-glint, #large-glint {opacity: 0;}
+
+    .fade-out {
+        //opacity: 0;
+        //transition: opacity 100ms linear;
+    }
 }
 
 
