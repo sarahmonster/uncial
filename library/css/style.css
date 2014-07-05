@@ -1314,7 +1314,7 @@ body {
   line-height: 1.5;
   color: #514036;
   background-color: #eaedf2;
-  background: url("../images/snow.jpg") bottom center fixed;
+  background: url("../images/trees.jpg") bottom center fixed;
   background-size: cover;
 }
 
@@ -1542,7 +1542,7 @@ PANEL STYLES
 
 /* line 246, ../scss/breakpoints/_base.scss */
 #home {
-  background: url("../images/snow.jpg") bottom center;
+  background: url("../images/trees.jpg") bottom center;
   background-size: cover;
 }
 
