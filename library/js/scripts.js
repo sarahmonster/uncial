@@ -123,6 +123,29 @@ jQuery(document).ready(function($) {
       });
     }
 
+    // Cache some variables
+    var links = $('nav').find('li a');
+    var slide = $('.page-panel');
+    var mywindow = $(window);
+    var htmlbody = $('html,body');
+
+    
+    // Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
+    // easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
+    function goToByScroll(dataslide) {
+        htmlbody.animate({
+            scrollTop: $('.page-panel[data-slide="' + dataslide + '"]').offset().top
+        }, 2000, 'easeInOutQuint');
+    }
+    
+    // When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
+    links.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+        $(this).blur();
+    });
+    
   /* Change Jetpack's title */
   $('#subscribe-field').removeAttr("style");
   $("label[for='subscribe-field']").text("Subscribe via email");
