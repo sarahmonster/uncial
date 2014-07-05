@@ -118,5 +118,9 @@ jQuery(document).ready(function($) {
     horizontalScrolling: false
   });
 
+  /* Change Jetpack's title */
+  $('#subscribe-field').removeAttr("style");
+  $("label[for='subscribe-field']").text("Subscribe via email");
+
 
 }); /* end of as page load scripts */
