@@ -255,33 +255,45 @@ PANEL STYLES
 	background: url('../images/grille.jpg') top center;
 	background-size: cover;
 
-	img.cover {
-		transform: rotate(-2deg);
-		box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-		max-width: 90%;
-		margin: -1em 0 -2em;
-	}
 	.pre-order {
-		text-align: center;
-		color: $blue;
-		
-		h2 {
-			color: lighten($blue, 20%);
-			border-color: lighten($blue, 20%);
-			text-shadow: 1px 1px 1px $black;
+
+		img.cover {
+			transform: rotate(-2deg);
+			box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+			max-width: 40%;
+			margin: -4em 0 1em;
+			float: left;
 		}
 
-		p {
-            font-size: .85em;
-            font-weight: bold;
-        }
+		p {display: none;}
+		
+		div {
+			text-align: center;
+			color: $blue;
+			float: left;
+			width: 58%;
+			
+			h2 {
+				color: lighten($blue, 20%);
+				border-color: lighten($blue, 20%);
+				text-shadow: 1px 1px 1px $black;
+			}
 
-        a {
-        	color: lighten($brown, 60%);
-            text-decoration: none;
-            text-shadow: 1px 1px 1px darken($brown, 20%);
-        }
+			p {
+				display: block;
+	            font-size: .85em;
+	            font-weight: bold;
+	        }
+
+	        a {
+	        	color: lighten($brown, 60%);
+	            text-decoration: none;
+	            text-shadow: 1px 1px 1px darken($brown, 20%);
+	        }
+	    }
 	}
+
+	.synopsis {clear: left;}
 }
 
 #about-the-author {

@@ -172,7 +172,6 @@ html, body, #container {
 
 /* individual page panels */
 #home {
-    
     margin: 0;
     
     .entry-content {
@@ -202,13 +201,24 @@ html, body, #container {
     
     .pre-order {
         @include span(4);
+        
+        img.cover {
+            max-width: 90%;
+            margin: -1em 5% -1em;
+            float: none;
+        }
 
-        div {padding: 10px 20px;}
+        div {
+            padding: 10px 20px;
+            float: none;
+            width: auto;
+        }
     }
 
     .synopsis {
         @include span(8); 
         @include omega;
+        clear: none;
     }
 }
 
