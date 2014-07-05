@@ -228,6 +228,20 @@ html, body, #container {
     position: fixed;
     top: -200px;
     right: -100px;
+    background-image: url('../images/sword.png');
+    width: 490px;
+    height: 1753px;
+
+    #small-glint {
+        height: 100px;
+        width: 101px;
+        margin-top: 440px;
+        margin-left: 30px;
+    }
+
+    #large-glint {
+        margin-left: 10px;
+    }
 }
 
 
