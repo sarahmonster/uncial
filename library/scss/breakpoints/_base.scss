@@ -146,7 +146,12 @@ h2:before, .h2:before, h2:after, .h2:after {
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	color: lighten($teal, 20%);
+	font-size: 1.25em;
+	line-height: 1.2em;
+	font-family: $display;
+	margin: 0 0 .5em;
+	a {color: lighten($teal, 20%);}
 }
 
 h4, .h4 {
@@ -325,20 +330,21 @@ PANEL STYLES
     	margin-top: 1em;
     	padding: 1em 2em;
     	color: $white;
+    	text-align: center;
 
     	h2 {
-    		display: block;
-    		text-align: center;
     		border-color: lighten($brown, 30%);
     		text-shadow: 1px 1px 1px $black;
-
+    		color: lighten($brown, 50%);
     		&:before, &:after {color: lighten($brown, 30%);}
-    		a {color: lighten($brown, 50%);}
     	}
+
+    	h3 a {color: lighten($teal, 60%);}
 
     	p {
     		font-size: 1.2em;
     		font-style: italic;
+    		text-align: justify;
     	}
 
     }
