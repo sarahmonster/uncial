@@ -114,9 +114,14 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
   /* start Stellar for parallax effects */
-  $(window).stellar({
-    horizontalScrolling: false
-  });
+  var mobileDevice = /(Android|iPad|iPhone|iPod|Windows Phone)/g.test(navigator.userAgent);
+
+    if (!mobileDevice) {
+      // initialise Stellar.js
+      $(window).stellar({
+        horizontalScrolling: false
+      });
+    }
 
   /* Change Jetpack's title */
   $('#subscribe-field').removeAttr("style");
