@@ -12,14 +12,14 @@
 
 								<header class="article-header">
 
-									<h2 class="byline vcard">
+									<h2 class="byline vcard"><a href="<?php the_permalink(); ?>">
 					                    <time class="updated" datetime="<?php echo get_the_time('Y-m-j'); ?>" pubdate>
 					                    	<span><?php echo get_the_time('l,'); ?></span>
 					                    	<?php echo get_the_time('F jS, Y'); ?>
 					                    </time>
-					                  </h2>
+					                </a></h2>
 
-					                <h3 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h3>	
+					                <h3 class="entry-title single-title" itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>	
 
 								</header>
 

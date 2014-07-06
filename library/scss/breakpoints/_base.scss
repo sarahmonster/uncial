@@ -288,7 +288,8 @@ PANEL STYLES
 			h2 {
 				color: lighten($blue, 20%);
 				border-color: lighten($blue, 20%);
-				text-shadow: 1px 1px 1px $black;
+				text-shadow: 1px 1px 2px $black;
+				a {color: lighten($blue, 20%);}
 			}
 
 			p {
@@ -298,10 +299,12 @@ PANEL STYLES
 	        }
 
 	        a {
-	        	color: lighten($brown, 60%);
+	        	color: lighten($brown, 70%);
 	            text-decoration: none;
-	            text-shadow: 1px 1px 1px darken($brown, 20%);
+	            text-shadow: 1px 1px 2px darken($brown, 30%);
+	            &:hover {color: lighten($brown, 50%);}
 	        }
+
 	    }
 	}
 
@@ -410,11 +413,15 @@ PANEL STYLES
     		border-color: lighten($brown, 30%);
     		text-shadow: 1px 1px 1px $black;
     		color: lighten($brown, 50%);
+    		a {color: lighten($brown, 50%);}
     		&:before, &:after {color: lighten($brown, 30%);}
     		span {display: none;}
     	}
 
-    	h3 a {color: lighten($teal, 60%);}
+    	h3 a {
+    		color: lighten($teal, 60%);
+    		&:hover {color: lighten($brown, 20%);}
+    	}
 
     	p {
     		font-size: 1.2em;
@@ -511,7 +518,7 @@ POSTS & CONTENT STYLES
 			color: $blue;
 			margin: 0.5em 0 1em;
 			border-color: darken($blue, 10%);
-
+			a {color: darken($blue, 20%);}
 			span {display: none;}
 
 		}
