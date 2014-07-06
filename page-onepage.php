@@ -5,7 +5,6 @@ Template Name: One-page site
 ?>
 
 <?php get_header(); ?>
-
 <?php // Let's show all the static pages!
 $pages = get_pages(array('child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'asc')); 
 $count = 1;
@@ -45,4 +44,7 @@ foreach ($pages as $post) :
     <img id="small-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
     <img id="large-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
 </div>
+<canvas id="canvas"></canvas>
+
 <?php get_footer(); ?>
+
