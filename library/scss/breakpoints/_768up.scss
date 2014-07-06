@@ -152,9 +152,6 @@ html, body, #container {
     margin: 0 auto;
     position: relative;
 }
-.inner-content .entry-content {
-    padding-top: 4em;
-}
 
 
 /* skip text */
@@ -176,7 +173,7 @@ html, body, #container {
     
     .entry-content {
         position: absolute;
-        bottom: 5%;
+        bottom: 7%;
         text-align: center;
         width: 100%;
     }
@@ -198,7 +195,8 @@ html, body, #container {
 
 
 #books {
-    
+    padding-top: 2em;
+
     .pre-order {
         @include span(4);
         
@@ -224,20 +222,29 @@ html, body, #container {
 
 #about-the-author {
     
-    .author-info {
+    h1, .author-info {
         @include span(7);
     }
 
     .contact {
         @include span(5);
         @include omega;
+
+        img {
+            max-width: 70%;
+            margin: -1em 5%;
+        }
+
+        .jetpack_subscription_widget {
+            max-width: 80%;
+        }
     }
 }
 
+
+
+
 #news {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: calc(100% + 30px);
     
     .news-excerpt {
         @include span(6);
