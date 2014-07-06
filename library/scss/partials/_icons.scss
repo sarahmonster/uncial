@@ -42,18 +42,23 @@ $twitter: #33CCFF;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-goodreads:before {
-  content: "g";
-  color: $goodreads;
+.icon-goodreads {
+  background-color: desaturate($goodreads, 20%);
+  &:hover {background-color: $goodreads;}
+  &:before {content: "g";}
 }
-.icon-social-twitter:before {
-  content: "t";
-  color: $twitter;
+.icon-social-twitter {
+  background-color: desaturate($twitter, 30%);
+  &:hover {background-color: $twitter;}
+  &:before {content: "t";}
 }
-.icon-facebook:before {
-  content: "f";
-  color: $facebook;
+.icon-facebook {
+  background-color: desaturate($facebook, 20%);
+  &:hover {background-color: $facebook;}
+  &:before {content: "f";}
 }
-.icon-mail-read:before {
-  content: "m";
+.icon-mail-read {
+  background-color: desaturate($garnet, 20%);
+  &:hover {background-color: $garnet;}
+  &:before {content: "m";}
 }
