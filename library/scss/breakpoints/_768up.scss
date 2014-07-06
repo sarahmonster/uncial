@@ -80,6 +80,13 @@ NAVIGATION STYLES
                 background-size: 110px 110px;
                 padding-top: 100px;
                 font-size: 1.15em;
+                opacity: .85;
+                transition: all 500ms ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                    color: $red;
+                }
             }
 
             &#home-link a {background-image: url('../images/icon-fire.png');}

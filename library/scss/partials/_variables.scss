@@ -32,12 +32,12 @@ $meta-gray:         #9fa6b4;
 $teal:              #293640;
 $brown:             #604c40;
 $blue:              #97b2b2;
-$red:               #4e0707;
-$garnet:            #3f1e25;
+$red:               #750303;
+$garnet:            #4e0707;
 
 $text-color:        darken($brown, 5%);
 $link-color:        $red;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        $teal;
 
 $border-color:      lighten($blue, 30%);
 $disabled-gray:     #cfcfcf;
