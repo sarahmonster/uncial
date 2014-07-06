@@ -384,7 +384,7 @@ PANEL STYLES
 	
 	.news-excerpt {
     	margin-top: 1em;
-    	padding: 1em 2em;
+    	padding: .125em .5em;
     	color: $white;
     	text-align: center;
 
@@ -393,6 +393,7 @@ PANEL STYLES
     		text-shadow: 1px 1px 1px $black;
     		color: lighten($brown, 50%);
     		&:before, &:after {color: lighten($brown, 30%);}
+    		span {display: none;}
     	}
 
     	h3 a {color: lighten($teal, 60%);}
@@ -405,7 +406,7 @@ PANEL STYLES
 
     }
 
-    .clearfix {padding-top: 1em;}
+    .clearfix {padding: .5em 0 .25em;}
 }
 
 #sword {display: none;}
