@@ -233,6 +233,8 @@ html, body, #container {
         @include span(7);
     }
 
+    .social-icons {bottom: -20px;}
+
     .contact {
         @include span(5);
         @include omega;
