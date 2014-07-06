@@ -160,12 +160,31 @@ jQuery(document).ready(function($) {
   //canvas init
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
+
+  var W;
+  var H;
   
-  //canvas dimensions
-  var W = window.innerWidth;
-  var H = window.innerHeight;
-  canvas.width = W;
-  canvas.height = H;
+  //set canvas dimensions on viewport re-size
+  function setCanvasSize() {
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W;
+    canvas.height = H;
+  }
+  setCanvasSize();
+
+  var isResizing = false;
+  $(window).on('resize', function() {
+    if (isResizing) {
+      return;
+    }
+
+    isResizing = true;
+    setTimeout(function() {
+      setCanvasSize();
+      isResizing = false;
+    }, 300);
+  });
   
   //snowflake particles
   var mp = NUMBER_OF_FLAKES; //max particles
