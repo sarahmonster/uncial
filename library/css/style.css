@@ -1348,7 +1348,7 @@ body {
   background-color: #eaedf2;
   background: url("../images/trees.jpg") bottom center fixed;
   background-size: cover;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 /* line 28, ../scss/breakpoints/_base.scss */
