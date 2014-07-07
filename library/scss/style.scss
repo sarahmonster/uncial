@@ -1,8 +1,8 @@
 /*! Made with Bones: http://themble.com/bones :) */
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Erin Lindsey	
+Author:	sarah semark
 
 Stylesheet: Main Stylesheet
 
@@ -123,6 +123,17 @@ This is for the larger monitors and possibly full screen viewers.
 
 	// styles in 1240up.scss
 	@import "breakpoints/1240up";
+
+} // end of media query
+
+/*********************
+SHORT SCREEN HEIGHT
+This is only for screens that are a little shorter than I'd like them to be, 
+but still tablet-sized and up
+*********************/
+@media only screen and (min-width: 768px) and (max-height: 720px) {
+
+	@import "breakpoints/short-screen";
 
 } // end of media query
 

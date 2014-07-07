@@ -10,6 +10,22 @@ all the content fits well.
 
 ******************************************************************/
 
-.page-panel {
-	border: 1px solid red;
+.home #main-nav ul {padding-top: 2%;}
+
+.entry-content blockquote {font-size: 1em;}
+
+#books .pre-order img.cover {
+    max-width: 70%;
+    margin-left: 15%;
 }
+
+#about-the-author .contact img {
+    max-width: 60%;
+    margin-left: 10%;
+    margin-top: -15%;
+
+}
+
+#news .news-excerpt:nth-of-type(3n), #news .news-excerpt:nth-of-type(4n) {display: none}
+
+//#news .news-excerpt h2 {display: none;}

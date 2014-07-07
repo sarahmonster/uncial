@@ -1,7 +1,7 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Erin Lindsey	
+Author:	sarah semark
 
 Stylesheet: Main Stylesheet
 
@@ -984,7 +984,7 @@ These boxes and containers are used in various places to hold content.
 @media only screen and (min-width: 768px) {
   /* line 11, ../scss/modules/_boxes.scss */
   .box, #about-the-author .author-info, .hentry {
-    padding: 3em;
+    padding: 3em 3em 1.5em 3em;
     width: 100%;
     left: 0;
   }
@@ -1667,7 +1667,7 @@ PANEL STYLES
 #about-the-author .agent, #about-the-author .publicity {
   text-align: center;
   font-size: .8em;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 /* line 335, ../scss/breakpoints/_base.scss */
 #about-the-author .social-icons {
@@ -2316,93 +2316,20 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Erin Lindsey
+  Author: sarah semark
   
-  Stylesheet: 481px and Up Stylesheet
+  Stylesheet: Short Screens Stylesheet
   
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
+  This stylesheet is designed to accomodate shorter screens (under 750px), mostly 
+  on desktops and tablets. Mostly it's just used to re-jig the panel displays so 
+  all the content fits well.
   
   ******************************************************************/
-  /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  /* line 33, ../scss/breakpoints/_481up.scss */
-  .menu {
-    /* end .menu ul */
+  /* line 13, ../scss/breakpoints/_481up.scss */
+  .page-panel {
+    border: 1px solid red;
   }
-  /* line 34, ../scss/breakpoints/_481up.scss */
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 35, ../scss/breakpoints/_481up.scss */
-  .menu ul li {
-    /*
-    plan your menus and drop-downs wisely.
-    */
-  }
-  /* line 36, ../scss/breakpoints/_481up.scss */
-  .menu ul li a {
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  /* line 81, ../scss/breakpoints/_481up.scss */
-  .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  /* line 85, ../scss/breakpoints/_481up.scss */
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  /* line 90, ../scss/breakpoints/_481up.scss */
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  /* line 95, ../scss/breakpoints/_481up.scss */
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
-
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */
 }
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -2611,7 +2538,7 @@ you can add resource intensive styles.
   /* line 170, ../scss/breakpoints/_768up.scss */
   #home .entry-content {
     position: absolute;
-    bottom: 7%;
+    bottom: 2%;
     text-align: center;
     width: 100%;
   }
@@ -2812,6 +2739,51 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+}
+/*********************
+SHORT SCREEN HEIGHT
+This is only for screens that are a little shorter than I'd like them to be, 
+but still tablet-sized and up
+*********************/
+@media only screen and (min-width: 768px) and (max-height: 720px) {
+  /******************************************************************
+  Site Name: Erin Lindsey
+  Author: sarah semark
+  
+  Stylesheet: Short Screens Stylesheet
+  
+  This stylesheet is designed to accomodate shorter screens (under 750px), mostly 
+  on desktops and tablets. Mostly it's just used to re-jig the panel displays so 
+  all the content fits well.
+  
+  ******************************************************************/
+  /* line 13, ../scss/breakpoints/_short-screen.scss */
+  .home #main-nav ul {
+    padding-top: 2%;
+  }
+
+  /* line 15, ../scss/breakpoints/_short-screen.scss */
+  .entry-content blockquote {
+    font-size: 1em;
+  }
+
+  /* line 17, ../scss/breakpoints/_short-screen.scss */
+  #books .pre-order img.cover {
+    max-width: 70%;
+    margin-left: 15%;
+  }
+
+  /* line 22, ../scss/breakpoints/_short-screen.scss */
+  #about-the-author .contact img {
+    max-width: 60%;
+    margin-left: 10%;
+    margin-top: -15%;
+  }
+
+  /* line 29, ../scss/breakpoints/_short-screen.scss */
+  #news .news-excerpt:nth-of-type(3n), #news .news-excerpt:nth-of-type(4n) {
+    display: none;
+  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
