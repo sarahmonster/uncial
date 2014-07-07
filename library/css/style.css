@@ -914,16 +914,16 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   letter-spacing: 1px;
   padding: 15px 10px;
   cursor: pointer;
-  -moz-transition: background-color 0.14s ease-in-out;
-  -o-transition: background-color 0.14s ease-in-out;
-  -webkit-transition: background-color 0.14s ease-in-out;
-  transition: background-color 0.14s ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
   border: none;
   background-color: #000;
   background: url("../images/metal.png");
-  -moz-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
-  -webkit-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
-  box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.75), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
+  -webkit-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.75), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
+  box-shadow: 0 2px 2px rgba(1, 2, 2, 0.75), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
 }
 /* line 46, ../scss/modules/_buttons.scss */
 .button:before, .comment-reply-link:before, #submit:before, input[type="submit"]:before, .button:after, .comment-reply-link:after, #submit:after, input[type="submit"]:after {
@@ -935,8 +935,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .button:hover, .comment-reply-link:hover, #submit:hover, input[type="submit"]:hover, .button:focus, .comment-reply-link:focus, #submit:focus, input[type="submit"]:focus {
   color: #604c40;
   text-decoration: none;
+  -moz-box-shadow: 0 -2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 3px rgba(1, 2, 2, 0.4);
+  -webkit-box-shadow: 0 -2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 3px rgba(1, 2, 2, 0.4);
+  box-shadow: 0 -2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 3px rgba(1, 2, 2, 0.4);
 }
-/* line 56, ../scss/modules/_buttons.scss */
+/* line 57, ../scss/modules/_buttons.scss */
 .button:active, .comment-reply-link:active, #submit:active, input[type="submit"]:active {
   top: 1px;
 }
@@ -946,15 +949,16 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 67, ../scss/modules/_buttons.scss */
+/* line 68, ../scss/modules/_buttons.scss */
 .button, .comment-reply-link, #submit {
   color: #293640;
 }
 
-/* line 74, ../scss/modules/_buttons.scss */
+/* line 75, ../scss/modules/_buttons.scss */
 input[type="submit"] {
+  -webkit-appearance: none;
   height: 40px;
-  padding-top: 0;
+  padding-top: 1px;
   line-height: 40px;
 }
 
@@ -1053,20 +1057,22 @@ textarea,
   margin-bottom: 14px;
   font-size: 1em;
   color: #514036;
-  border-radius: 3px;
+  border-radius: 0;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
   font-family: "Merriweather", "Georgia", Cambria, Times New Roman, Times, serif;
-  background-color: #eaedf2;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-appearance: none;
+  outline: none;
   -moz-transition: background-color 0.24s ease-in-out;
   -o-transition: background-color 0.24s ease-in-out;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
-/* line 59, ../scss/modules/_forms.scss */
+/* line 61, ../scss/modules/_forms.scss */
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus,
 input[type="password"]:active,
@@ -1100,9 +1106,12 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
+  background-color: white;
+  border: 1px solid #c5b2a7;
+  box-shadow: none;
+  -webkit-appearance: none;
 }
-/* line 65, ../scss/modules/_forms.scss */
+/* line 70, ../scss/modules/_forms.scss */
 input[type="text"].error, input[type="text"].is-invalid,
 input[type="password"].error,
 input[type="password"].is-invalid,
@@ -1144,7 +1153,7 @@ textarea.is-invalid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
   outline-color: #fbe3e4;
 }
-/* line 77, ../scss/modules/_forms.scss */
+/* line 82, ../scss/modules/_forms.scss */
 input[type="text"].success, input[type="text"].is-valid,
 input[type="password"].success,
 input[type="password"].is-valid,
@@ -1186,7 +1195,7 @@ textarea.is-valid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
   outline-color: #e6efc2;
 }
-/* line 89, ../scss/modules/_forms.scss */
+/* line 94, ../scss/modules/_forms.scss */
 input[type="text"][disabled], input[type="text"].is-disabled,
 input[type="password"][disabled],
 input[type="password"].is-disabled,
@@ -1224,7 +1233,7 @@ textarea.is-disabled,
   border-color: #cfcfcf;
   opacity: 0.6;
 }
-/* line 95, ../scss/modules/_forms.scss */
+/* line 100, ../scss/modules/_forms.scss */
 input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,
 input[type="password"][disabled]:focus,
 input[type="password"][disabled]:active,
@@ -1293,14 +1302,14 @@ textarea.is-disabled:active,
   background-color: #d5edf8;
 }
 
-/* line 105, ../scss/modules/_forms.scss */
+/* line 110, ../scss/modules/_forms.scss */
 textarea {
   max-width: 100%;
   min-height: 120px;
   line-height: 1.5em;
 }
 
-/* line 112, ../scss/modules/_forms.scss */
+/* line 117, ../scss/modules/_forms.scss */
 select {
   -webkit-appearance: none;
   /* 1 */
