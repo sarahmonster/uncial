@@ -31,7 +31,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-decoration: none;
   color: $brown;
   @include text-shadow(0 1px 1px rgba(255,255,255,.75));
-  font-size: 1em;
+  font-size: .85em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -41,8 +41,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   border: none;
   background-color: #000;
   background: url('../images/metal.png');
-  @include box-shadow(0 2px 2px rgba(1,2,2,.35));
-  @include box-shadow(inset 0 0 0 2px rgba(250,250,250,.5));
+  @include box-shadow(0 2px 2px rgba(1,2,2,.5), inset 0 0 0 2px rgba(250,250,250,.75), inset 0 0 0 3px rgba(1,2,2,.2));
 
   &:before, &:after {
     content: '\00b7';
@@ -50,7 +49,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     padding: 10px;
   }
   &:hover, &:focus {
-    color: $white;
+    color: $brown;
     text-decoration: none;
   } 
 
@@ -67,16 +66,7 @@ and it will create a button dependant on those variables.
 */
 .button {
   @extend %btn; 
-  background-color: $blue;
-
-  &:hover,
-  &:focus {
-    background-color: darken($blue, 4%);
-  } // end hover
-
-  &:active {
-    background-color: darken($blue, 5%);
-  } // end active
+  color: $teal;
 
 } // end blue button
 

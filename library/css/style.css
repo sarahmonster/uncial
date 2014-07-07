@@ -908,7 +908,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-decoration: none;
   color: #604c40;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  font-size: 1em;
+  font-size: .85em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -921,25 +921,22 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   border: none;
   background-color: #000;
   background: url("../images/metal.png");
-  -moz-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.35);
-  -webkit-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.35);
-  box-shadow: 0 2px 2px rgba(1, 2, 2, 0.35);
-  -moz-box-shadow: inset 0 0 0 2px rgba(250, 250, 250, 0.5);
-  -webkit-box-shadow: inset 0 0 0 2px rgba(250, 250, 250, 0.5);
-  box-shadow: inset 0 0 0 2px rgba(250, 250, 250, 0.5);
+  -moz-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
+  -webkit-box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
+  box-shadow: 0 2px 2px rgba(1, 2, 2, 0.5), inset 0 0 0 2px rgba(250, 250, 250, 0.75), inset 0 0 0 3px rgba(1, 2, 2, 0.2);
 }
-/* line 47, ../scss/modules/_buttons.scss */
+/* line 46, ../scss/modules/_buttons.scss */
 .button:before, .comment-reply-link:before, #submit:before, input[type="submit"]:before, .button:after, .comment-reply-link:after, #submit:after, input[type="submit"]:after {
   content: '\00b7';
   display: inline;
   padding: 10px;
 }
-/* line 52, ../scss/modules/_buttons.scss */
+/* line 51, ../scss/modules/_buttons.scss */
 .button:hover, .comment-reply-link:hover, #submit:hover, input[type="submit"]:hover, .button:focus, .comment-reply-link:focus, #submit:focus, input[type="submit"]:focus {
-  color: white;
+  color: #604c40;
   text-decoration: none;
 }
-/* line 57, ../scss/modules/_buttons.scss */
+/* line 56, ../scss/modules/_buttons.scss */
 .button:active, .comment-reply-link:active, #submit:active, input[type="submit"]:active {
   top: 1px;
 }
@@ -949,20 +946,12 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 68, ../scss/modules/_buttons.scss */
+/* line 67, ../scss/modules/_buttons.scss */
 .button, .comment-reply-link, #submit {
-  background-color: #97b2b2;
-}
-/* line 72, ../scss/modules/_buttons.scss */
-.button:hover, .comment-reply-link:hover, #submit:hover, .button:focus, .comment-reply-link:focus, #submit:focus {
-  background-color: #8ba9a9;
-}
-/* line 77, ../scss/modules/_buttons.scss */
-.button:active, .comment-reply-link:active, #submit:active {
-  background-color: #88a7a7;
+  color: #293640;
 }
 
-/* line 84, ../scss/modules/_buttons.scss */
+/* line 74, ../scss/modules/_buttons.scss */
 input[type="submit"] {
   height: 40px;
   padding-top: 0;
