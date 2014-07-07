@@ -2728,14 +2728,14 @@ you can add resource intensive styles.
   }
   /* line 279, ../scss/breakpoints/_768up.scss */
   #sword #small-glint {
-    height: 100px;
-    width: 101px;
-    margin-top: 440px;
-    margin-left: 30px;
+    height: 70px;
+    width: 71px;
+    margin: 460px 60px -15px 40px;
   }
-  /* line 286, ../scss/breakpoints/_768up.scss */
+  /* line 285, ../scss/breakpoints/_768up.scss */
   #sword #large-glint {
-    margin-left: 10px;
+    height: 160px;
+    width: 161px;
   }
   /* line 290, ../scss/breakpoints/_768up.scss */
   #sword #small-glint, #sword #large-glint {
