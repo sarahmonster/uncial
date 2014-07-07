@@ -54,9 +54,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     @include box-shadow(0 -2px 2px rgba(1,2,2,.5), inset 0 0 0 3px rgba(1,2,2,.4));
   } 
 
-  &:active {
-    top: 1px; 
-  } 
+  &:active {top: 1px; } 
 
 } 
 
@@ -68,9 +66,7 @@ and it will create a button dependant on those variables.
 .button {
   @extend %btn; 
   color: $teal;
-
-} // end blue button
-
+} 
 
 input[type="submit"] {
   @extend %btn;

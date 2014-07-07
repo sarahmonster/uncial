@@ -15,23 +15,19 @@ foreach ($pages as $post) :
     
         <div class="inner-content wrap clearfix">
             <div class="clearfix entry-content" role="main">
-                <?php //if (the_slug() != "home"):  echo the_title('<h1>', '</h1>');  endif; ?>
                 <?php echo the_content(); ?>
                 
                 <?php if (the_slug() == "news"): ?>
                     <?php echo the_title('<h1>', '</h1>'); ?>
                     <?php get_template_part('news'); ?>
-                    <div class="clearfix center"><a class="button" href="/news">Read all news posts</a></div>
+                    <div class="clearfix center">
+                        <a class="button" href="/news">Read all news posts</a>
+                        <a class="button" id="top-button" data-slide="1">Return to top</a>
+                    </div>
                 <?php endif; ?> 
             
             </div>
         </div>
-        
-        <?php if (the_slug() == "news"): ?>
-            <a class="direction-button up" data-slide="1" title="Back to top"></a>
-        <?php else: ?>
-            <a class="direction-button down" data-slide="<?php echo ++$count; ?>" title="Next panel"></a>           
-        <?php endif; ?>
         
     </div>
     

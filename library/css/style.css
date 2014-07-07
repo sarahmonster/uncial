@@ -949,12 +949,12 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 68, ../scss/modules/_buttons.scss */
+/* line 66, ../scss/modules/_buttons.scss */
 .button, .comment-reply-link, #submit {
   color: #293640;
 }
 
-/* line 75, ../scss/modules/_buttons.scss */
+/* line 71, ../scss/modules/_buttons.scss */
 input[type="submit"] {
   -webkit-appearance: none;
   height: 40px;
@@ -1783,6 +1783,10 @@ PANEL STYLES
   font-style: italic;
   text-align: justify;
 }
+/* line 433, ../scss/breakpoints/_base.scss */
+#news #top-button {
+  display: none;
+}
 /* line 434, ../scss/breakpoints/_base.scss */
 #news .clearfix {
   padding: .5em 0 .25em;
@@ -2600,69 +2604,56 @@ you can add resource intensive styles.
     position: relative;
   }
 
-  /* skip text */
-  /* line 165, ../scss/breakpoints/_768up.scss */
-  .skip-text {
-    display: none;
-  }
-
-  /* down buttons */
-  /* line 171, ../scss/breakpoints/_768up.scss */
-  .direction-button {
-    top: auto;
-    bottom: 20px;
-  }
-
   /* individual page panels */
-  /* line 178, ../scss/breakpoints/_768up.scss */
+  /* line 170, ../scss/breakpoints/_768up.scss */
   #home {
     margin: 0;
   }
-  /* line 181, ../scss/breakpoints/_768up.scss */
+  /* line 173, ../scss/breakpoints/_768up.scss */
   #home .entry-content {
     position: absolute;
     bottom: 7%;
     text-align: center;
     width: 100%;
   }
-  /* line 188, ../scss/breakpoints/_768up.scss */
+  /* line 180, ../scss/breakpoints/_768up.scss */
   #home h1 {
     margin: 0 auto;
     padding-right: 2em;
   }
-  /* line 193, ../scss/breakpoints/_768up.scss */
+  /* line 185, ../scss/breakpoints/_768up.scss */
   #home blockquote {
     font-size: 2em;
     margin-top: 25%;
   }
-  /* line 198, ../scss/breakpoints/_768up.scss */
+  /* line 190, ../scss/breakpoints/_768up.scss */
   #home .direction-button {
     display: block;
   }
 
-  /* line 204, ../scss/breakpoints/_768up.scss */
+  /* line 196, ../scss/breakpoints/_768up.scss */
   #books {
     padding-top: 2em;
   }
-  /* line 207, ../scss/breakpoints/_768up.scss */
+  /* line 199, ../scss/breakpoints/_768up.scss */
   #books .pre-order {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 210, ../scss/breakpoints/_768up.scss */
+  /* line 202, ../scss/breakpoints/_768up.scss */
   #books .pre-order img.cover {
     max-width: 90%;
     margin: -1em 5% -1em;
     float: none;
   }
-  /* line 216, ../scss/breakpoints/_768up.scss */
+  /* line 208, ../scss/breakpoints/_768up.scss */
   #books .pre-order div {
     padding: 10px 20px;
     float: none;
     width: auto;
   }
-  /* line 223, ../scss/breakpoints/_768up.scss */
+  /* line 215, ../scss/breakpoints/_768up.scss */
   #books .synopsis {
     width: 66.10169%;
     float: left;
@@ -2672,17 +2663,17 @@ you can add resource intensive styles.
     clear: none;
   }
 
-  /* line 232, ../scss/breakpoints/_768up.scss */
+  /* line 224, ../scss/breakpoints/_768up.scss */
   #about-the-author h1, #about-the-author .author-info {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 236, ../scss/breakpoints/_768up.scss */
+  /* line 228, ../scss/breakpoints/_768up.scss */
   #about-the-author .social-icons {
     bottom: -20px;
   }
-  /* line 238, ../scss/breakpoints/_768up.scss */
+  /* line 230, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact {
     width: 40.67797%;
     float: left;
@@ -2690,39 +2681,44 @@ you can add resource intensive styles.
     float: right;
     margin-right: 0;
   }
-  /* line 242, ../scss/breakpoints/_768up.scss */
+  /* line 234, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact img {
     max-width: 70%;
     margin: -1em 5%;
   }
-  /* line 247, ../scss/breakpoints/_768up.scss */
+  /* line 239, ../scss/breakpoints/_768up.scss */
   #about-the-author .contact .jetpack_subscription_widget {
     max-width: 80%;
   }
 
-  /* line 258, ../scss/breakpoints/_768up.scss */
+  /* line 250, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     padding: .5em 1em;
   }
-  /* line 262, ../scss/breakpoints/_768up.scss */
+  /* line 254, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(2n) {
     float: right;
     margin-right: 0;
   }
-  /* line 266, ../scss/breakpoints/_768up.scss */
+  /* line 258, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt:nth-of-type(3n) {
     margin-left: 0;
     clear: left;
   }
-  /* line 271, ../scss/breakpoints/_768up.scss */
+  /* line 263, ../scss/breakpoints/_768up.scss */
   #news .news-excerpt h2 span {
     display: inline;
   }
+  /* line 266, ../scss/breakpoints/_768up.scss */
+  #news #top-button {
+    display: inline-block;
+    margin-left: 2em;
+  }
 
-  /* line 276, ../scss/breakpoints/_768up.scss */
+  /* line 273, ../scss/breakpoints/_768up.scss */
   #sword {
     display: block;
     position: fixed;
@@ -2732,18 +2728,18 @@ you can add resource intensive styles.
     width: 490px;
     height: 1753px;
   }
-  /* line 285, ../scss/breakpoints/_768up.scss */
+  /* line 282, ../scss/breakpoints/_768up.scss */
   #sword #small-glint {
     height: 100px;
     width: 101px;
     margin-top: 440px;
     margin-left: 30px;
   }
-  /* line 292, ../scss/breakpoints/_768up.scss */
+  /* line 289, ../scss/breakpoints/_768up.scss */
   #sword #large-glint {
     margin-left: 10px;
   }
-  /* line 296, ../scss/breakpoints/_768up.scss */
+  /* line 293, ../scss/breakpoints/_768up.scss */
   #sword #small-glint, #sword #large-glint {
     opacity: 0;
   }
@@ -2751,7 +2747,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 309, ../scss/breakpoints/_768up.scss */
+  /* line 301, ../scss/breakpoints/_768up.scss */
   #main {
     width: 83.05085%;
     float: left;
@@ -2760,17 +2756,17 @@ you can add resource intensive styles.
     margin-right: 0;
   }
 
-  /* line 313, ../scss/breakpoints/_768up.scss */
+  /* line 305, ../scss/breakpoints/_768up.scss */
   #content {
     margin-top: 250px;
   }
 
-  /* line 317, ../scss/breakpoints/_768up.scss */
+  /* line 309, ../scss/breakpoints/_768up.scss */
   .hentry {
     margin-bottom: 1.5em;
   }
 
-  /* line 321, ../scss/breakpoints/_768up.scss */
+  /* line 313, ../scss/breakpoints/_768up.scss */
   .byline span {
     display: inline-block;
   }

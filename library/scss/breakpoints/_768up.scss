@@ -161,17 +161,9 @@ html, body, #container {
 }
 
 
-/* skip text */
-.skip-text {
-    display: none;
-}
 
 
-/* down buttons */
-.direction-button {
-    top: auto;
-    bottom: 20px;
-}
+
 
 
 /* individual page panels */
@@ -271,6 +263,11 @@ html, body, #container {
         h2 span {display: inline;}
     }
 
+    #top-button {
+        display: inline-block;
+        margin-left: 2em;
+    }
+
 }
 
 #sword {
@@ -294,11 +291,6 @@ html, body, #container {
     }
 
     #small-glint, #large-glint {opacity: 0;}
-
-    .fade-out {
-        //opacity: 0;
-        //transition: opacity 100ms linear;
-    }
 }
 
 
