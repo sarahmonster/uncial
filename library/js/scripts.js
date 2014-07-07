@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
     $("label[for='subscribe-field']").text("Subscribe via email");
 
   var NUMBER_OF_FLAKES = 250;
-  var UPDATE_TIME = 11; // in ms
+  var UPDATE_TIME = 50; // in ms
 
   //canvas init
   var canvas = document.getElementById("canvas");
