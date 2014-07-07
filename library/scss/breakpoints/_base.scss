@@ -23,6 +23,7 @@ body {
 	background-color: $gray;
 	background: url('../images/trees.jpg') bottom center fixed;
 	background-size: cover;
+	overflow-x: none;
 }
 canvas {
 	display: block;
