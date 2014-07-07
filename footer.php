@@ -1,4 +1,4 @@
-			<footer class="footer" role="contentinfo">
+            <footer class="footer" role="contentinfo">
 
 				<div id="inner-footer" class="wrap cf">
 
@@ -9,6 +9,11 @@
 			</footer>
 
 		</div>
+
+        <div id="sword" data-stellar-ratio=".75"/>
+            <img id="small-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
+            <img id="large-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
+        </div>
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>

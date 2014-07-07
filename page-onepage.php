@@ -36,10 +36,6 @@ foreach ($pages as $post) :
 <?php endforeach; ?>
 <?php wp_reset_postdata(); ?>
 
-<div id="sword" data-stellar-ratio=".75"/>
-    <img id="small-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
-    <img id="large-glint" src="<?php echo get_template_directory_uri(); ?>/library/images/glint.png" alt="*">
-</div>
 <canvas id="canvas"></canvas>
 
 <?php get_footer(); ?>
