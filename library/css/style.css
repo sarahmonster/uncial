@@ -2780,8 +2780,8 @@ but still tablet-sized and up
     margin-top: -15%;
   }
 
-  /* line 29, ../scss/breakpoints/_short-screen.scss */
-  #news .news-excerpt:nth-of-type(3n), #news .news-excerpt:nth-of-type(4n) {
+  /* line 31, ../scss/breakpoints/_short-screen.scss */
+  #news .news-excerpt h2 {
     display: none;
   }
 }

@@ -26,6 +26,6 @@ all the content fits well.
 
 }
 
-#news .news-excerpt:nth-of-type(3n), #news .news-excerpt:nth-of-type(4n) {display: none}
+//#news .news-excerpt:nth-of-type(3n), #news .news-excerpt:nth-of-type(4n) {display: none}
 
-//#news .news-excerpt h2 {display: none;}
+#news .news-excerpt h2 {display: none;}
