@@ -133,6 +133,34 @@ jQuery(document).ready(function($) {
     var slide = $('.page-panel');
     var mywindow = $(window);
     var htmlbody = $('html,body');
+
+    // REMOVE THIS BEFORE PRODUCTION
+    window.localStorage.clear();
+    // First-run fade-in on home page
+    if (window.localStorage && window.localStorage.ranHomeAnimation !== 'true') {
+      // Don't run if not on home page or has already run.
+      $('#logo,#main-nav,#home h1,#sword,canvas').css('opacity', 0);
+
+      $(window).on('load', function() {
+        setTimeout(function() {
+          $('#logo').fadeTo(1000, 1, 'easeInQuad');
+        }, 0);
+        setTimeout(function() {
+          $('#main-nav').fadeTo(2000, 1, 'easeInOutQuad');
+        }, 500);
+        setTimeout(function() {
+          $('#sword').fadeTo(3000, 1, 'easeInOutQuad');
+        }, 1000);
+        setTimeout(function() {
+          $('#home h1').fadeTo(3000, 1, 'easeInOutQuad');
+        }, 2000);
+        setTimeout(function() {
+          $('canvas').fadeTo(3000, 1, 'easeInOutQuad');
+        }, 2000);
+
+        window.localStorage.ranHomeAnimation = 'true';
+      });
+    }
     
     // Create a function that will be passed a slide number and then will scroll to that slide using jQuery's animate. The Jquery
     // easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
