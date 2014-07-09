@@ -271,9 +271,9 @@ jQuery(document).ready(function($) {
   //$('#small-glint, #large-glint').addClass('fade-out');
   
   $('#home').waypoint(function() {
-      $('#large-glint').fadeTo(50, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
-      $('#small-glint').fadeTo(150, .8, 'easeInOutElastic').fadeTo(250, 0, 'easeInOutElastic');
-      $('#large-glint').fadeTo(300, .8, 'easeInOutElastic').fadeTo(400, 0, 'easeInOutElastic');
+      $('#small-glint').fadeTo(50, 1, 'easeInOutElastic').fadeTo(200, 0, 'easeInOutElastic');
+      $('#large-glint').fadeTo(150, .8, 'easeInOutElastic').fadeTo(250, 0, 'easeInOutElastic');
+      $('#small-glint').fadeTo(300, .8, 'easeInOutElastic').fadeTo(400, 0, 'easeInOutElastic');
   }, { offset: '-15%' });
 
   $('#books').waypoint(function() {
