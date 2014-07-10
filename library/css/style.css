@@ -2523,7 +2523,7 @@ you can add resource intensive styles.
   /* override default header + nav display on homepage */
   /* line 103, ../scss/breakpoints/_768up.scss */
   .home header[role=banner] #logo {
-    margin-left: -6em;
+    margin-left: -10em;
   }
 
   /* line 105, ../scss/breakpoints/_768up.scss */
@@ -2535,7 +2535,7 @@ you can add resource intensive styles.
   }
   /* line 111, ../scss/breakpoints/_768up.scss */
   .home #main-nav ul {
-    padding: 10% 8em 10% 0;
+    padding: 10% 14em 10% 0;
   }
   /* line 113, ../scss/breakpoints/_768up.scss */
   .home #main-nav li {
@@ -2609,7 +2609,7 @@ you can add resource intensive styles.
   /* line 177, ../scss/breakpoints/_768up.scss */
   #home h1 {
     margin: 0 auto;
-    padding-right: 2em;
+    padding-right: 4em;
   }
   /* line 182, ../scss/breakpoints/_768up.scss */
   #home blockquote {

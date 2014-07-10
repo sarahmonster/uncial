@@ -100,7 +100,7 @@ NAVIGATION STYLES
 
 /* override default header + nav display on homepage */
 
-.home header[role=banner] #logo {margin-left: -6em;}
+.home header[role=banner] #logo {margin-left: -10em;}
 
 .home #main-nav {
     position: relative;
@@ -108,7 +108,7 @@ NAVIGATION STYLES
     width: 100%;
     top: 0;
 
-    ul {padding: 10% 8em 10% 0;}
+    ul {padding: 10% 14em 10% 0;}
 
     li {
         display: inline-block;
@@ -176,7 +176,7 @@ html, body, #container {
 
     h1 {
         margin: 0 auto;
-        padding-right: 2em;
+        padding-right: 4em;
     }
     
     blockquote {
