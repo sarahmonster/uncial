@@ -1645,14 +1645,14 @@ PANEL STYLES
 }
 /* line 306, ../scss/breakpoints/_base.scss */
 #books p:nth-of-type(3n) {
-  width: 50%;
+  width: 60%;
 }
 /* line 308, ../scss/breakpoints/_base.scss */
 #books .book-thumbs {
   max-width: 250px;
   float: right;
   position: relative;
-  margin: -13em 4em 0 0;
+  margin: -12em 2em 0 0;
   z-index: 100;
 }
 /* line 315, ../scss/breakpoints/_base.scss */
