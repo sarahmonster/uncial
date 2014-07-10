@@ -192,37 +192,39 @@ html, body, #container {
 
 #books {
     padding-top: 2em;
-}
 
-.pre-order {
-    @include span(4);
-    
-    img.cover {
-        max-width: 90%;
-        margin: -1em 5% -1em;
-        float: none;
+    .pre-order {
+        @include span(4);
+        
+        img.cover {
+            max-width: 90%;
+            margin: -1em 5% -1em;
+            float: none;
+        }
+
+        div {
+            padding: 10px 20px;
+            float: none;
+            width: auto;
+        }
     }
 
-    div {
-        padding: 10px 20px;
-        float: none;
-        width: auto;
+    .synopsis {
+        @include span(8); 
+        @include omega;
+        clear: none;
     }
-}
-
-.synopsis {
-    @include span(8); 
-    @include omega;
-    clear: none;
 }
 
 
 /* styles specific to books sub-pages */
 .page .pre-order {
     @include span(5);
+    margin-left: -4%;
 
     img.cover {
-        margin-top: 2em;
+        max-width: 120%;
+        margin: 1em 0 1em -15%;
     }
 }
 
