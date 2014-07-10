@@ -302,6 +302,37 @@ PANEL STYLES
 	}
 
 	.synopsis {clear: left;}
+
+	p:nth-of-type(3n) {width: 50%;}
+
+	.book-thumbs {
+		max-width: 250px;
+		float: right;
+		position: relative;
+		margin: -13em 4em 0 0;
+		z-index: 100;
+
+		h2 {display: none;}
+
+		div {
+			width: 48%;
+			margin: -1em 0;
+			float: left;
+			text-align: center;
+
+			img {
+				transform: rotate(2deg);
+				box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+			}
+
+			&:first-of-type {
+				margin: 2% 2% 0 0;
+				img {transform: rotate(-2deg);}
+			}
+
+			h2 {display: none;}
+		}
+	}
 }
 
 /* styles consistent to books sub-pages */
@@ -613,7 +644,7 @@ POSTS & CONTENT STYLES
 				padding: 0;
 				font-style: italic;
 				color: lighten($teal, 10%);
-				font-size: 1.2em;
+				font-size: 1em;
 
 				&:before {}
 

@@ -213,6 +213,15 @@ html, body, #container {
         @include span(8); 
         @include omega;
         clear: none;
+        //font-size: .8em;
+    }
+
+    .book-thumb {
+        margin-bottom: -2em;
+        h2 {
+            //display: inline-block;
+            margin: 0;
+        }
     }
 }
 
