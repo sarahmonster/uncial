@@ -16,3 +16,12 @@ be seen on the Desktop.
 #sword {
     right: -100px;
 }
+
+
+@media (min-height: 850px) {
+    .home #main-nav ul {padding-top: 20%;}
+} 
+
+@media (min-height: 1050px) {
+    .home #main-nav ul {padding-top: 30%;}
+} 
