@@ -303,14 +303,10 @@ PANEL STYLES
 
 	.synopsis {clear: left;}
 
-	p:nth-of-type(3n) {width: 60%;}
-
 	.book-thumbs {
-		max-width: 250px;
-		float: right;
 		position: relative;
-		margin: -12em 2em 0 0;
 		z-index: 100;
+		margin: -1em 0 0;
 
 		h2 {display: none;}
 
@@ -330,7 +326,6 @@ PANEL STYLES
 				img {@include transform(rotate(-2deg));}
 			}
 
-			h2 {display: none;}
 		}
 	}
 }
