@@ -703,6 +703,10 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*********************
+BOX SIZING
+*********************/
+/* @include transform(-2deg); */
 @font-face {
   font-family: "erin-lindsey";
   src: url("../fonts/erin-lindsey.eot");
@@ -1664,6 +1668,9 @@ PANEL STYLES
 }
 /* line 323, ../scss/breakpoints/_base.scss */
 #books .book-thumbs div img {
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   transform: rotate(2deg);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -1673,6 +1680,9 @@ PANEL STYLES
 }
 /* line 330, ../scss/breakpoints/_base.scss */
 #books .book-thumbs div:first-of-type img {
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
 /* line 333, ../scss/breakpoints/_base.scss */
@@ -1683,6 +1693,9 @@ PANEL STYLES
 /* styles consistent to books sub-pages */
 /* line 341, ../scss/breakpoints/_base.scss */
 .pre-order img.cover {
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
   transform: rotate(-2deg);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -1746,6 +1759,9 @@ PANEL STYLES
 }
 /* line 406, ../scss/breakpoints/_base.scss */
 #about-the-author .contact img {
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   max-width: 50%;

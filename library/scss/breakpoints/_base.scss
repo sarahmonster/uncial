@@ -321,13 +321,13 @@ PANEL STYLES
 			text-align: center;
 
 			img {
-				transform: rotate(2deg);
+				@include transform(rotate(2deg));
 				box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 			}
 
 			&:first-of-type {
 				margin: 2% 2% 0 0;
-				img {transform: rotate(-2deg);}
+				img {@include transform(rotate(-2deg));}
 			}
 
 			h2 {display: none;}
@@ -339,7 +339,7 @@ PANEL STYLES
 .pre-order {
 	
 	img.cover {
-		transform: rotate(-2deg);
+		@include transform(rotate(-2deg));
 		box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 	}
 
@@ -404,7 +404,7 @@ PANEL STYLES
 	.contact {
 
 		img {
-			transform: rotate(3deg);
+			@include transform(rotate(3deg));
 			box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 			max-width: 50%;
 			margin: 4em 25% 0;
