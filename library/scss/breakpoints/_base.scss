@@ -273,17 +273,12 @@ PANEL STYLES
 	.pre-order {
 
 		img.cover {
-			transform: rotate(-2deg);
-			box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 			max-width: 40%;
 			margin: -4em 0 1em;
 			float: left;
 		}
-
-		p {display: none;}
 		
 		div {
-			text-align: center;
 			color: $blue;
 			float: left;
 			width: 58%;
@@ -295,11 +290,6 @@ PANEL STYLES
 				a {color: lighten($blue, 20%);}
 			}
 
-			p {
-				display: block;
-	            font-size: .85em;
-	            font-weight: bold;
-	        }
 
 	        a {
 	        	color: lighten($brown, 70%);
@@ -313,6 +303,28 @@ PANEL STYLES
 
 	.synopsis {clear: left;}
 }
+
+/* styles consistent to books sub-pages */
+.pre-order {
+	
+	img.cover {
+		transform: rotate(-2deg);
+		box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+	}
+
+	p {display: none;}
+
+	div {
+		text-align: center;
+
+		p {
+			display: block;
+	        font-size: .85em;
+	        font-weight: bold;
+	    }
+	}
+}
+
 
 #about-the-author {
 	background: url('../images/wood.jpg') top center;
