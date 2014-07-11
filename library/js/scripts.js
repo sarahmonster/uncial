@@ -134,8 +134,9 @@ jQuery(document).ready(function($) {
     var mywindow = $(window);
     var htmlbody = $('html,body');
 
-    // REMOVE THIS BEFORE PRODUCTION
-    window.localStorage.clear();
+    // This clears localStorage for testing.
+    // window.localStorage.clear();
+    
     // First-run fade-in on home page
     if (window.localStorage && window.localStorage.ranHomeAnimation !== 'true') {
       // Don't run if not on home page or has already run.
